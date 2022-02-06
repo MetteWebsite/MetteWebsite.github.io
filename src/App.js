@@ -1,7 +1,8 @@
 import { React, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import { BrowserRouter as Router, Switch, Route, useLocation } from 'react-router-dom';
-import { FooterContainer } from './containers/footer';
+// import { FooterContainer } from './containers/footer';
+import { FooterContainer } from './components/footer';
 import { BsArrowUpLeftCircleFill } from 'react-icons/bs';
 
 /*----- Pages -----*/
