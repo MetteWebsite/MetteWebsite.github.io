@@ -1,6 +1,6 @@
 import { React, useEffect } from 'react';
 import Navbar from './components/Navbar';
-import { BrowserRouter as Router, Switch, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, useLocation, Redirect } from 'react-router-dom';
 // import { FooterContainer } from './containers/footer';
 import { FooterContainer } from './components/footer';
 import { BsArrowUpLeftCircleFill } from 'react-icons/bs';
@@ -115,6 +115,9 @@ function App() {
             <Route path='/Märken' exact component={Märken} /><Route />
           </Switch> {/*----- Märken -----*/}
           <FooterContainer/>
+                          {/* default redirect to home page */}
+                          <Redirect from="*" to="/" />
+
       </Router>
 
     </>
