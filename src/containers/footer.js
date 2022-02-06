@@ -1,5 +1,6 @@
 import React from 'react'
-import Footer from '../components/footer'
+// import Footer from '../components/footer'
+import Footer from '../components/footer/index'
 import Icon from '../components/icons'
 import logga from '../images/MetteLogga.png';
 
