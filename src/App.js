@@ -1,6 +1,7 @@
 import { React, useEffect } from 'react';
 import Navbar from './components/Navbar';
-import { BrowserRouter as Router, Switch, Route, useLocation, Redirect } from 'react-router-dom';
+// import { BrowserRouter as Router, Switch, Route, useLocation, Redirect } from 'react-router-dom';
+import { HashRouter as Router, Switch, Route, useLocation, Redirect } from 'react-router-dom';
 // import { FooterContainer } from './containers/footer';
 import { FooterContainer } from './components/footer';
 import { BsArrowUpLeftCircleFill } from 'react-icons/bs';
