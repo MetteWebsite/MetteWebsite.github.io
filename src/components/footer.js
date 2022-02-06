@@ -6,6 +6,7 @@ import React from 'react'
 import Footer from '../components/footer/index';
 import Icon from './icons';
 import logga from '../images/MetteLogga.png';
+import {Link} from 'react-router-dom';
 
 
 export function FooterContainer() {
@@ -27,8 +28,10 @@ export function FooterContainer() {
 
                     <Footer.Column>
                         <Footer.Title>Om oss</Footer.Title>
-                        <Footer.Link href="/kontakt">Kontakta oss</Footer.Link>
-                        <Footer.Link href="/mette21-22">Mette</Footer.Link>
+                        {/* <Footer.Link to="/kontakt">Kontakta oss</Footer.Link>
+                        <Footer.Link to="/mette21-22">Mette</Footer.Link> */}
+                        <Link to='/mette21-22'>Mette 21/22</Link>
+                        <Link to='/kontakt'>Kontakt</Link>
                     </Footer.Column>
 
                     <Footer.Column>

@@ -27,8 +27,10 @@ export function FooterContainer() {
 
                     <Footer.Column>
                         <Footer.Title>Om oss</Footer.Title>
-                        <Footer.Link to="/kontakt">Kontakta oss</Footer.Link>
-                        <Footer.Link to="/mette21-22">Mette</Footer.Link>
+                        {/* <Footer.Link to="/kontakt">Kontakta oss</Footer.Link>
+                        <Footer.Link to="/mette21-22">Mette</Footer.Link> */}
+                        <Link to='/mette21-22'>Mette 21/22</Link>
+                        <Link to='/kontakt'>Kontakt</Link>
                     </Footer.Column>
 
                     <Footer.Column>
