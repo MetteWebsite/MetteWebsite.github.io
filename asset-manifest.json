@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.c784a7f0.chunk.css",
-    "main.js": "/static/js/main.351d73e3.chunk.js",
-    "main.js.map": "/static/js/main.351d73e3.chunk.js.map",
+    "main.css": "/static/css/main.def8c43f.chunk.css",
+    "main.js": "/static/js/main.9c5804ec.chunk.js",
+    "main.js.map": "/static/js/main.9c5804ec.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.d62944a8.js",
     "runtime-main.js.map": "/static/js/runtime-main.d62944a8.js.map",
     "static/css/2.663b4c1b.chunk.css": "/static/css/2.663b4c1b.chunk.css",
@@ -10,7 +10,7 @@
     "static/js/2.bfaf1710.chunk.js.map": "/static/js/2.bfaf1710.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.663b4c1b.chunk.css.map": "/static/css/2.663b4c1b.chunk.css.map",
-    "static/css/main.c784a7f0.chunk.css.map": "/static/css/main.c784a7f0.chunk.css.map",
+    "static/css/main.def8c43f.chunk.css.map": "/static/css/main.def8c43f.chunk.css.map",
     "static/js/2.bfaf1710.chunk.js.LICENSE.txt": "/static/js/2.bfaf1710.chunk.js.LICENSE.txt",
     "static/media/Bild_kommer.f93107da.png": "/static/media/Bild_kommer.f93107da.png",
     "static/media/eventPages_withGallery.css": "/static/media/Övrigt_bakgrund.3f16c73a.png",
@@ -86,7 +86,7 @@
     "static/js/runtime-main.d62944a8.js",
     "static/css/2.663b4c1b.chunk.css",
     "static/js/2.bfaf1710.chunk.js",
-    "static/css/main.c784a7f0.chunk.css",
-    "static/js/main.351d73e3.chunk.js"
+    "static/css/main.def8c43f.chunk.css",
+    "static/js/main.9c5804ec.chunk.js"
   ]
 }
