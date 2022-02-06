@@ -114,9 +114,9 @@ function App() {
           <Switch>
             <Route path='/Märken' exact component={Märken} /><Route />
           </Switch> {/*----- Märken -----*/}
-
+          <FooterContainer/>
       </Router>
-      <FooterContainer/>
+
     </>
   );
 }
