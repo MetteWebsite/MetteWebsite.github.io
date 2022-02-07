@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.def8c43f.chunk.css",
+    "main.css": "/static/css/main.ffb54791.chunk.css",
     "main.js": "/static/js/main.9c5804ec.chunk.js",
     "main.js.map": "/static/js/main.9c5804ec.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.d62944a8.js",
@@ -10,9 +10,10 @@
     "static/js/2.bfaf1710.chunk.js.map": "/static/js/2.bfaf1710.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.663b4c1b.chunk.css.map": "/static/css/2.663b4c1b.chunk.css.map",
-    "static/css/main.def8c43f.chunk.css.map": "/static/css/main.def8c43f.chunk.css.map",
+    "static/css/main.ffb54791.chunk.css.map": "/static/css/main.ffb54791.chunk.css.map",
     "static/js/2.bfaf1710.chunk.js.LICENSE.txt": "/static/js/2.bfaf1710.chunk.js.LICENSE.txt",
     "static/media/Bild_kommer.f93107da.png": "/static/media/Bild_kommer.f93107da.png",
+    "static/media/Damsittning.7c381bb9.png": "/static/media/Damsittning.7c381bb9.png",
     "static/media/eventPages_withGallery.css": "/static/media/Övrigt_bakgrund.3f16c73a.png",
     "static/media/Kvinnosymbol.a4c3e920.jpg": "/static/media/Kvinnosymbol.a4c3e920.jpg",
     "static/media/MetteLogga.46a9eb48.png": "/static/media/MetteLogga.46a9eb48.png",
@@ -86,7 +87,7 @@
     "static/js/runtime-main.d62944a8.js",
     "static/css/2.663b4c1b.chunk.css",
     "static/js/2.bfaf1710.chunk.js",
-    "static/css/main.def8c43f.chunk.css",
+    "static/css/main.ffb54791.chunk.css",
     "static/js/main.9c5804ec.chunk.js"
   ]
 }
