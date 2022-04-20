@@ -4,6 +4,7 @@ import Icon from '../components/icons'
 import {Container, Row, Col} from 'react-bootstrap';
 import { useScrollTo } from "react-use-window-scroll";
 import {contact1, contact2, contact3} from "./db.js";
+import {Link} from 'react-router-dom';
 
 function Kontakt() {
     const ScrollTo = useScrollTo();
@@ -106,7 +107,7 @@ function Kontakt() {
           </div>
 
           <div className="knapp">
-            <a href="/mette21-22">MER OM GRUPPEN</a>
+            <Link to="/mette21-22">MER OM GRUPPEN</Link>
           </div>
         </div>
       </div>

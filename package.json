@@ -27,7 +27,8 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build",
+    "deploy": "npm run cleanup && gh-pages -b main -d build",
+    "cleanup": "rm -rf node_modules/.cache/gh-pages",
     "start": "react-scripts start, webpack-dev-server --inline --content-base . --history-api-fallback",
     "build": "react-scripts build",
     "test": "react-scripts test",

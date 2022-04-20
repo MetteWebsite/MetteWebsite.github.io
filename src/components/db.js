@@ -86,7 +86,7 @@ export const profile = [
     {
         post:   'Mettes maskot',
         img:    imgMaskot, //replace with actual photo of maskot :) 
-        name:   'Meteorita',
+        name:   'Metteorita',
         class:  'Classified',
         city:   'Classified',
         text:   'Jag heter Meteorita och är Mettes maskot. Med mina glajjor är jag den coolaste i Mette. Alltid.',

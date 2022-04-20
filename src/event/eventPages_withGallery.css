@@ -1,5 +1,6 @@
 .event-section {
-  background: url("../images/imageFeed_bilder/Damsittning.png");
+  background: url("../images/feed_bakgrund/Damsittning_bakgrund.png") center
+    center/cover no-repeat;
   background-repeat: no-repeat;
   background-attachment: fixed;
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.35);
@@ -35,7 +36,8 @@
 }
 
 .gaia-section {
-  background: url("../images/feed_bakgrund/Gaia_bakgrund.png");
+  background: url("../images/feed_bakgrund/Gaia_bakgrund.png") center
+    center/cover no-repeat;
   background-repeat: no-repeat;
   background-attachment: fixed;
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.35);
@@ -70,7 +72,8 @@
 }
 
 .övrigt-section {
-  background: url("../images/feed_bakgrund/Övrigt_bakgrund.png");
+  background: url("../images/feed_bakgrund/Övrigt_bakgrund.png") center
+    center/cover no-repeat;
   background-repeat: no-repeat;
   background-attachment: fixed;
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.35);

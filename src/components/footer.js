@@ -30,12 +30,13 @@ export function FooterContainer() {
                         <Footer.Title>Om oss</Footer.Title>
                         {/* <Footer.Link to="/kontakt">Kontakta oss</Footer.Link>
                         <Footer.Link to="/mette21-22">Mette</Footer.Link> */}
-                        <Link to='/mette21-22'>Mette 21/22</Link>
-                        <Link to='/kontakt'>Kontakt</Link>
+                        <Link to='/mette21-22' className="footLink2">Mette 21/22</Link>
+                        <Link to='/kontakt' className="footLink2">Kontakt</Link>
                     </Footer.Column>
 
                     <Footer.Column>
                         <Footer.Title>Följ oss</Footer.Title>
+                    
                         <Footer.Link href="https://www.facebook.com/MTMette/"><Icon className="fab fa-facebook-square"/>Facebook</Footer.Link>
                         <Footer.Link href="https://www.instagram.com/mettemedbandana/"><Icon className="fab fa-instagram"/>Instagram</Footer.Link>
                         {/* <Footer.Link href="#"><Icon className="fab fa-twitter"/>Twitter</Footer.Link> */}

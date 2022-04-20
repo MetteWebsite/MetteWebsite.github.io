@@ -49,6 +49,18 @@ h1 {
   text-align: center;
 }
 
+.footLink2 {
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 18px;
+  text-decoration: none;
+  font-family: "Lora", serif;
+}
+
+.footLink2:hover {
+  color: #ff9c00;
+  transition: 200ms ease-in;
+}
 /* .sign-up {
   background-image: url("/images/img-8.jpg");
   background-position: center;
