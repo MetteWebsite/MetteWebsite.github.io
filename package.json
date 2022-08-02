@@ -54,5 +54,8 @@
   },
   "devDependencies": {
     "gh-pages": "^3.2.3"
-  }
+  },
+  "Git Bash":{
+    "source": "Git Bash"
+}
 }
