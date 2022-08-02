@@ -16,6 +16,9 @@
       "src": "logo512.png",
       "type": "image/png",
       "sizes": "512x512"
+    },
+    "Git Bash",{
+      "source": "Git Bash"
     }
   ],
   "start_url": ".",
