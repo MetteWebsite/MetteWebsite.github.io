@@ -1,4 +1,4 @@
-/* Colour palette https://colors.muz.li/palette/000000/f5a25d/ff9292/ffffff/f5a25d */
+/* Color palette https://colors.muz.li/palette/000000/f5a25d/ff9292/ffffff/f5a25d */
 @import url("https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@100&family=Roboto:wght@300;400;500&display=swap");
 
 * {
@@ -27,7 +27,7 @@ body {
 
 .hem,
 .kontakt,
-.mette21-22 {
+.mette22-23 {
   display: flex;
   height: 90vh;
   align-items: center;
@@ -36,7 +36,7 @@ body {
 }
 
 .om-oss {
-  background-image: url("images/img-2.jpg");
+  background-image: url("images/met-home.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
