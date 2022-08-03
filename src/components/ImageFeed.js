@@ -19,12 +19,14 @@ function ImageFeed() {
     <div className="info_text">
       <p className="feedText">
         Varje år håller Mette i olika event som du bland annat kan läsa mer om
-        här nedan! Vi planerar tillsammans traditionella event som MTs ovveinvigning, men det är alltid
-        lika roligt och spännande att få jobba med nya projekt. Utöver våra event, kan du
-        även hitta övrig information kring Mette. 
+        här nedan! Vi planerar tillsammans traditionella event som MTs
+        ovveinvigning, men det är alltid lika roligt och spännande att få jobba
+        med nya projekt. Utöver våra event, kan du även hitta övrig information
+        kring Mette.
       </p>
-      <p className="feedText" style={{marginTop: 20}}>Klicka på bilderna nedan för att få veta mer!</p>
-      
+      <p className="feedText" style={{ marginTop: 20 }}>
+        Klicka på bilderna nedan för att få veta mer!
+      </p>
       <div className="container_image-feed">
         {/* 
           Grid layout
@@ -77,9 +79,6 @@ function ImageFeed() {
 } /*end of funciton*/
 
 export default ImageFeed;
-
-
-
 
 // {/*----- event 1 -----*/ }
 // <div className="container_image">
