@@ -1028,7 +1028,7 @@
             Object(j.jsx)("div", {
               className: "space",
               children: Object(j.jsxs)(Te, {
-                label: "METTE 22-23",
+                label: "METTE 21-22",
                 children: [
                   " ",
                   Object(j.jsx)("img", { className: "maritImg", src: Pe }),
