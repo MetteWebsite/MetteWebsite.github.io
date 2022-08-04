@@ -27,7 +27,7 @@ function Profil() {
     <div className="mette-info">
       {/* Gruppbild */}
       <div className="section">
-        <h1>METTE 21/22</h1>
+        <h1>METTE 22-23</h1>
         <p>Skrolla ner för att veta mer om vilka vi är!</p>
         <div className="arrow" style={{ cursor: "pointer" }}>
           <span
