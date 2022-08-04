@@ -1,5 +1,5 @@
-(this["webpackJsonpreact-website-mette"] =
-  this["webpackJsonpreact-website-mette"] || []).push([
+(this["webpackJsonpreact-website-mette-1.0"] =
+  this["webpackJsonpreact-website-mette-1.0"] || []).push([
   [0],
   {
     101: function (e, t, a) {},
@@ -535,21 +535,21 @@
         me = [
           {
             post: "Ordf\xf6rande",
-            text: "Har du generella fr\xe5gor om vad som helst som ang\xe5r f\xf6reningen, kontakta v\xe5r ordf\xf6rande Ia Bruno p\xe5: ",
+            text: "Har du generella fr\xe5gor om vad som helst som ang\xe5r f\xf6reningen, kontakta v\xe5r ordf\xf6rande Salma Gabot p\xe5: ",
             email: "mailto:Mettestyrelsen@medieteknik.nu",
             icon: "fas fa-paper-plane",
             linkText: "Mettestyrelsen@medieteknik.nu",
           },
           {
             post: "Kass\xf6r",
-            text: "Undrar du \xf6ver n\xe5got som ang\xe5r Mettes ekonomi, kan du kontakta v\xe5r kass\xf6r Jessie Chow p\xe5: ",
+            text: "Undrar du \xf6ver n\xe5got som ang\xe5r Mettes ekonomi, kan du kontakta v\xe5r kass\xf6r Cornelia Holm p\xe5: ",
             email: "mailto:Mettekassor@medieteknik.nu",
             icon: "fas fa-paper-plane",
             linkText: "Mettekassor@medieteknik.nu",
           },
           {
             post: "Event",
-            text: "Har du fr\xe5gor ang\xe5ende v\xe5ra kommande event och aktiviteter? Kontakta Tilda Hylander p\xe5: ",
+            text: "Har du fr\xe5gor ang\xe5ende v\xe5ra kommande event och aktiviteter? Kontakta Rebecka Sahlin p\xe5: ",
             email: "mailto:Metteevent@medieteknik.nu",
             icon: "fas fa-paper-plane",
             linkText: "Metteevent@medieteknik.nu",
@@ -558,21 +558,21 @@
         be = [
           {
             post: "F\xf6retagsansvarig",
-            text: "Vill ditt f\xf6retag diskutera om samarbeten eller sponsra Mette? Kontakta Lovisa Svensson: ",
+            text: "Vill ditt f\xf6retag diskutera om samarbeten eller sponsra Mette? Kontakta Tove T\xe5ngring: ",
             email: "mailto:Samarbete.mette@medieteknik.nu",
             icon: "fas fa-paper-plane",
             linkText: "Samarbete.mette@medieteknik.nu",
           },
           {
             post: "Tryck och PR",
-            text: "Fr\xe5gor ang\xe5ende Mettes allm\xe4nna marknadsf\xf6ring, Kontakta Johanna Folde p\xe5: ",
+            text: "Fr\xe5gor ang\xe5ende Mettes allm\xe4nna marknadsf\xf6ring, kontakta Jenny Cleasson p\xe5: ",
             email: "mailto:Mettepr@medieteknik.nu",
             icon: "fas fa-paper-plane",
             linkText: "Mettepr@medieteknik.nu",
           },
           {
             post: "Webbansvarig",
-            text: "Hittar du n\xe5got konstigt eller har du fr\xe5gor om hemsidans inneh\xe5ll, kontakta Cindy Khuong p\xe5: ",
+            text: "Hittar du n\xe5got konstigt eller har du fr\xe5gor om hemsidans inneh\xe5ll, kontakta Emma Bjelk\xe5a p\xe5: ",
             email: "mailto:Mettewebb@medieteknik.nu",
             icon: "fas fa-paper-plane",
             linkText: "Mettewebb@medieteknik.nu",
