@@ -30,7 +30,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "npm run cleanup && gh-pages -b main -d build",
+    "deploy": "npm run start && gh-pages -b main -d build",
     "cleanup": "rm -rf node_modules/.cache/gh-pages",
     "start": "react-scripts start",
     "build": "react-scripts build",
