@@ -102,7 +102,7 @@
                         Object(j.jsx)("li", {
                           className: "nav-item",
                           children: Object(j.jsx)(d.b, {
-                            to: "/mette21-22",
+                            to: "/mette22-23",
                             className: "nav-links",
                             onClick: x,
                             children: Object(j.jsx)("p", {
@@ -1969,7 +1969,7 @@
               Object(j.jsxs)(k.d, {
                 children: [
                   Object(j.jsx)(k.b, {
-                    path: "/mette21-22",
+                    path: "/mette22-23",
                     exact: !0,
                     component: fe,
                   }),
