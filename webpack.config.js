@@ -1,14 +1,22 @@
 const ExtractCssChunks = require("extract-css-chunks-webpack-plugin");
+const webpack = require("webpack");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+
+const plugins = [
+  new ExtractCssChunks({
+    // Options similar to the same options in webpackOptions.output
+    // both options are optional
+    filename: "[name].css",
+    chunkFilename: "[id].css",
+  }),
+];
+if (devMode) {
+  // only enable hot in development
+  plugins.push(new webpack.HotModuleReplacementPlugin());
+}
 
 module.exports = {
-  plugins: [
-    new ExtractCssChunks({
-      // Options similar to the same options in webpackOptions.output
-      // both options are optional
-      filename: "[name].css",
-      chunkFilename: "[id].css",
-    }),
-  ],
+  plugins,
   module: {
     rules: [
       {
