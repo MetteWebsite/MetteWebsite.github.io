@@ -15,7 +15,7 @@
     211: function (e, t, a) {},
     212: function (e, t, a) {},
     213: function (e, t, a) {
-      "use strict";
+      //"use strict";
       a.r(t);
       var n = a(1),
         i = a.n(n),
@@ -26,7 +26,7 @@
         d = a(2),
         o = a.p + "static/media/MetteLogga.46a9eb48.png",
         j = (a(111), a(0));
-      a(117), a(118);
+      a(117); a(118);
       var m,
         b,
         h,
@@ -212,7 +212,7 @@
           T,
           Object(r.a)(Object(r.a)({}, a), {}, { children: t })
         );
-      }),
+      });
         (I.Row = function (e) {
           var t = e.children,
             a = Object(f.a)(e, ["children"]);
@@ -220,7 +220,7 @@
             y,
             Object(r.a)(Object(r.a)({}, a), {}, { children: t })
           );
-        }),
+        });
         (I.Column = function (e) {
           var t = e.children,
             a = Object(f.a)(e, ["children"]);
@@ -228,7 +228,7 @@
             w,
             Object(r.a)(Object(r.a)({}, a), {}, { children: t })
           );
-        }),
+        });
         (I.Link = function (e) {
           var t = e.children,
             a = Object(f.a)(e, ["children"]);
@@ -236,7 +236,7 @@
             E,
             Object(r.a)(Object(r.a)({}, a), {}, { children: t })
           );
-        }),
+        });
         (I.Title = function (e) {
           var t = e.children,
             a = Object(f.a)(e, ["children"]);
@@ -316,7 +316,7 @@
           }),
         });
       }
-      a(43), a(120);
+      a(43); a(120);
       var P,
         D,
         V,
@@ -452,7 +452,9 @@
       var Y = function () {
         return Object(j.jsx)(j.Fragment, { children: Object(j.jsx)(Q, {}) });
       };
-      a(124), a(54), a.p;
+      a(124); 
+      a(54); 
+      a.p();
       var _ = a.p + "static/media/profil-3.8a6e18b2.JPG",
         $ = a.p + "static/media/profil-6.96494ad5.JPG",
         ee = a.p + "static/media/s\xf6k_mette.793da6cf.png",
@@ -596,7 +598,7 @@
           { img: le, title: "SPONSORER", link: "/Spons" },
           { img: de, title: "METTES M\xc4RKEN", link: "/M\xe4rken" },
         ];
-      a.p;
+      a.p();
       var xe = function () {
         return Object(j.jsxs)("div", {
           className: "info_text",
@@ -839,7 +841,7 @@
           ],
         });
       };
-      a(126), a(127);
+      a(126);a(127);
       var ve,
         Oe,
         ke,
