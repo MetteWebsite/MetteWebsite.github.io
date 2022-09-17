@@ -623,7 +623,7 @@
                       children: [
                         Object(j.jsx)("img", {
                           src: e.img,
-                          alt: "eventTjejfika",
+                          alt: "rosaVeckan1",
                         }),
                         Object(j.jsx)(d.b, {
                           to: e.link,

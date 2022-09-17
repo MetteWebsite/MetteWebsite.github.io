@@ -39,7 +39,7 @@ function ImageFeed() {
         {imgFeed.map((data, key) => {
           return (
             <div className="container_image" key={key}>
-              <img src={data.img} alt="eventTjejfika"></img>
+              <img src={data.img} alt="rosaVeckan1"></img>
               <Link to={data.link}>
                 <div className="overlay_image-feed">
                   <div className="text_image-feed">{data.title}</div>
