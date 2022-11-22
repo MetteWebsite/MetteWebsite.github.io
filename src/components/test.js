@@ -1,89 +1,87 @@
-import React from 'react';
-import './Profil.scss';
-import Icon from '../components/icons'
+import React from "react";
+import "./Profil.scss";
+import Icon from "../components/icons";
 
 /*----- Import images -----*/
-import img1 from '../images/profil-1.JPG';
-import img2 from '../images/profil-2.JPG';
-import img3 from '../images/profil-3.JPG';
-import img4 from '../images/profil-4.JPG';
-import img5 from '../images/profil-5.JPG';
-import img6 from '../images/profil-6.JPG';
-import img7 from '../images/profil-7.JPG';
+import img1 from "../images/profil-1.JPG";
+import img2 from "../images/profil-2.JPG";
+import img3 from "../images/profil-3.JPG";
+import img4 from "../images/profil-4.JPG";
+import img5 from "../images/profil-5.JPG";
+import img6 from "../images/profil-6.JPG";
+import img7 from "../images/profil-7.JPG";
 
-import Fade from 'react-fade-in';
-import Button from 'react-bootstrap/Button'
-import { useState } from 'react';
-import CloseButton from 'react-bootstrap/CloseButton'
-import { useScrollTo } from 'react-use-window-scroll';
+import Fade from "react-fade-in";
+import Button from "react-bootstrap/Button";
+import { useState } from "react";
+import CloseButton from "react-bootstrap/CloseButton";
+import { useScrollTo } from "react-use-window-scroll";
 
-import {profile} from './db.js'
+import { profile } from "./db.js";
 
 function Profil() {
-    // const [Open, setOpen] = useState(false);
-    const ScrollTo = useScrollTo();
+  // const [Open, setOpen] = useState(false);
+  const ScrollTo = useScrollTo();
 
-    return(
+  return (
+    <div className="mette-info">
+      {/* Gruppbild */}
+      <div className="section">
+        <h1>METTE 22/23</h1>
+        <p>Skrolla ner för att veta mer om vilka vi är!</p>
+        <div className="arrow" style={{ cursor: "pointer" }}>
+          <span
+            onClick={() =>
+              ScrollTo({ top: window.innerHeight, left: 0, behavior: "smooth" })
+            }
+          ></span>
+          <span
+            onClick={() =>
+              ScrollTo({ top: window.innerHeight, left: 0, behavior: "smooth" })
+            }
+          ></span>
+        </div>
+      </div>{" "}
+      {/* end Gruppbild */}
+      {/* Profiler */}
+      <div className="text">
+        <h3>Det är vi som är Mette 22/23!</h3>
+        <div class="container_profile-images">
+          {/*----- jessie testar databas -----*/}
+          {profile.map((data, key) => {
+            return (
+              // <div key={key}>
+              //   {
+              <div class="container_image" key={key}>
+                {/*----- Image -----*/}
+                <img src={data.img} alt="profileImage"></img>
 
-        <div className="mette-info">
-
-            {/* Gruppbild */}
-            <div className="section">
-                <h1>METTE 21/22</h1>
-                <p>Skrolla ner för att veta mer om vilka vi är!</p>
-                <div className="arrow" style={{cursor: "pointer"}}>
-                    <span onClick={() => ScrollTo({ top: window.innerHeight, left: 0, behavior: "smooth" })}></span>
-                    <span onClick={() => ScrollTo({ top: window.innerHeight, left: 0, behavior: "smooth" })}></span>
+                {/* presentation boxes */}
+                <div className="presentation">
+                  <div className="presentation_content">
+                    <div className="namn">{data.name}</div>
+                    <div className="post">{data.post}</div>
+                  </div>
                 </div>
-            </div>  {/* end Gruppbild */}
 
-            {/* Profiler */}    
-
-            <div className="text">
-                <h3>Det är vi som är Mette 21/22!</h3>
-              
-            <div class ="container_profile-images">
-
-                {/*----- jessie testar databas -----*/}
-                {profile.map((data, key) => {
-                        return (
-                            // <div key={key}>
-                            //   {
-                            <div class="container_image" key={key}>
-                                    {/*----- Image -----*/}
-                                    <img src={data.img} alt="profileImage"></img>
-
-                                    {/* presentation boxes */}
-                                    <div className="presentation">
-                                        <div className="presentation_content">
-                                            <div className="namn">{data.name}</div>
-                                            <div className="post">{data.post}</div>
-                                        </div>
-                                    </div>
-
-                                    <div class="overlay_profile-image">
-                                        {/*----- Text -----*/}
-                                        <div class="text_profile">{data.text}</div>
-                                    </div>
-                                </div> 
-                                // }
-                            // </div>
-                        );}
-                    )
-                }
-                {/*----- jessie testar databas END -----*/}
-
-            </div> {/* end container_image-feed */}
-
-        </div> {/*text end*/}
+                <div class="overlay_profile-image">
+                  {/*----- Text -----*/}
+                  <div class="text_profile">{data.text}</div>
+                </div>
+              </div>
+              // }
+              // </div>
+            );
+          })}
+          {/*----- jessie testar databas END -----*/}
+        </div>{" "}
+        {/* end container_image-feed */}
+      </div>{" "}
+      {/*text end*/}
     </div>
-
-    );
+  );
 }
 export default Profil;
-
-
-
 
 // Old stuff
 //      {/*----- Ordförande -----*/}
@@ -124,7 +122,7 @@ export default Profil;
 //              <div className="post">Sekreterare</div>
 //          </div>
 //      </div>
-     
+
 //      <div class="overlay_profile-image">
 //          {/*----- Text -----*/}
 //          <div class="name_profile">Mathilda Welander</div>
@@ -133,7 +131,7 @@ export default Profil;
 //          {/*----- Link -----*/}
 //          <a class="email_profile" href="mailto:sekreterare.mette@medieteknik.nu">
 //              {/*----- Icon -----*/}
-//              <i class="material-icons">email</i> 
+//              <i class="material-icons">email</i>
 //          </a>
 //      </div>
 //  </div> {/* end Sekreterare */}
@@ -159,7 +157,7 @@ export default Profil;
 //          {/*----- Link -----*/}
 //          <a class="email_profile" href="mailto:mettekassor@medieteknik.nu">
 //              {/*----- Icon -----*/}
-//              <i class="material-icons">email</i> 
+//              <i class="material-icons">email</i>
 //          </a>
 //      </div>
 //  </div> {/* end Kassör */}
@@ -175,7 +173,7 @@ export default Profil;
 //              <div className="namn"> Lovisa Svensson </div>
 //              <div className="post">Företagsansvarig</div>
 //          </div>
-//      </div>               
+//      </div>
 
 //       <div class="overlay_profile-image">
 //          {/*----- Text -----*/}
@@ -185,14 +183,14 @@ export default Profil;
 //          {/*----- Link -----*/}
 //          <a class="email_profile" href="mailto:samarbete.mette@medieteknik.nu">
 //              {/*----- Icon -----*/}
-//              <i class="material-icons">email</i> 
+//              <i class="material-icons">email</i>
 //          </a>
 //      </div>
 //  </div> {/* end Spons&Komm */}
 
 //  {/*----- Tryck&PR -----*/}
 //  <div class="container_image" >
-     
+
 //      {/*----- Image -----*/}
 //      <img src={img5} alt="profil2"></img>
 
@@ -213,7 +211,7 @@ export default Profil;
 //              {/*----- Link -----*/}
 //              <a class="email_profile" href="mailto:mettepr@medieteknik.nu">
 //                  {/*----- Icon -----*/}
-//                  <i class="material-icons">email</i> 
+//                  <i class="material-icons">email</i>
 //              </a>
 //          </div>
 //      </div>
@@ -242,7 +240,7 @@ export default Profil;
 //          {/*----- Link -----*/}
 //          <a class="email_profile" href="mailto:mettewebb@medieteknik.nu">
 //              {/*----- Icon -----*/}
-//              <i class="material-icons">email</i> 
+//              <i class="material-icons">email</i>
 //          </a>
 //      </div>
 //  </div> {/* end Webb */}
@@ -269,7 +267,7 @@ export default Profil;
 //              {/*----- Link -----*/}
 //              <a class="email_profile" href="https://www.instagram.com/mettemedbandana/">
 //                  {/*----- Icon -----*/}
-//                  <i class="material-icons">email</i> 
+//                  <i class="material-icons">email</i>
 //              </a>
 //          </div> {/* end Text */}
 //      </div>

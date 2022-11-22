@@ -1,17 +1,14 @@
 /*----- Import images for profile -----*/
-import imgOrdforande from '../images/profil-1.JPG';  // Ordförande
-import imgSekreterare from '../images/profil-2.JPG';  // Sekreterare
-import imgKassor from '../images/profil-3.JPG';  // Kassör
-import imgSpons from '../images/profil-4.JPG';  // Spons&Komm
-import imgTryck from '../images/profil-5.JPG';  // Tryck&PR
-import imgWebb from '../images/profil-6.JPG';  // Webb
-import imgEvent from '../images/profil-7.JPG';  // Event
+import imgOrdforande from "../images/profil-1.JPG"; // Ordförande
+import imgSekreterare from "../images/profil-2.JPG"; // Sekreterare
+import imgKassor from "../images/profil-3.JPG"; // Kassör
+import imgSpons from "../images/profil-4.JPG"; // Spons&Komm
+import imgTryck from "../images/profil-5.JPG"; // Tryck&PR
+import imgWebb from "../images/profil-6.JPG"; // Webb
+import imgEvent from "../images/profil-7.JPG"; // Event
 // Maskot
 //import Bild_kommer from '../images/met-7.JPG';
-import imgMaskot from '../images/sök_mette.png';
-
-
-
+import imgMaskot from "../images/mettilda.jpg";
 
 /*----- Imports for image feed -----*/
 import img1 from "../images/sökMette.jpg";
@@ -27,77 +24,77 @@ import img11 from "../images/imageFeed_bilder/Damsittning.png";
 
 /*----- Profile images and text (profil.js) -----*/
 export const profile = [
-    {
-        post:   'Ordförande',
-        img:    imgOrdforande,
-        name:   'Ia Bruno',
-        class:  'MT3',
-        city:   'Täby (Stockholm)',
-        text:   'När jag inte pluggar kan man se mig hemma framför datorn, mitt i ett spännande brädspel eller på tornet med en god öl.'
-    },
-    {
-        post:   'Sekreterare',
-        img:    imgSekreterare,
-        name:   'Mathilda Welander',
-        class:  'MT3',
-        city:   'Växjo',
-        text:   'På fritiden gillar jag att ta det lugnt, dricka vin med mina vänner och gå på något spinningpass då och då. '
-    },
-    {
-        post:   'Kassör',
-        img:    imgKassor,
-        name:   'Jessie Chow ',
-        class:  'MT4',
-        city:   'Borås ☂',
-        text:   'När jag inte pluggar gillar jag att spela spel, göra nån random kod-tutorial, kolla serier eller baka :)'
-    },
-    {
-        post:   'Spons & kommunikation',
-        img:    imgSpons,
-        name:   'Lovisa Svensson',
-        class:  'MT2',
-        city:   'Oxelösund',
-        text:   'Jag tog mig den otroligt långa vägen från Oxelösund till MT och går nu mitt andra år här. Förutom plugg gillar jag memes, spel och träning.',
-    },
-    {
-        post:   'Tryck & PR',
-        img:    imgTryck,
-        name:   'Johanna Folde',
-        class:  'MT4',
-        city:   'Örebro',
-        text:   'När jag är ledig tycker jag om att fördriva tiden med promenader, filmer och så klart lite tecknande. ',
-    },
-    {
-        post:   'Webbansvarig',
-        img:    imgWebb,
-        name:   'Cindy Khuong',
-        class:  'MT3',
-        city:   'Eskilstuna',
-        text:   'Förutom att plugga så hittar ni nog mig hemma och kolla serier och då ska sushi vara med i bilden. Try to change my mind!',
-    },
-    {
-        post:   'Eventansvarig',
-        img:    imgEvent,
-        name:   'Tilda Hylander',
-        class:  'MT4',
-        city:   'Norrköping',
-        text:   'På fritiden gillar jag att umgås med vänner, klappa min katt eller ta det lugnt och lägga pussel. ',
-    },
-    {
-        post:   'Mettes maskot',
-        img:    imgMaskot, //replace with actual photo of maskot :) 
-        name:   'Metteorita',
-        class:  'Classified',
-        city:   'Classified',
-        text:   'Jag heter Meteorita och är Mettes maskot. Med mina glajjor är jag den coolaste i Mette. Alltid.',
-    }
-]
+  {
+    post: "Ordförande",
+    img: imgOrdforande,
+    name: "Salma Gabot",
+    class: "MT3",
+    city: "**",
+    text: "**",
+  },
+  {
+    post: "Sekreterare",
+    img: imgSekreterare,
+    name: "Alma Linder",
+    class: "MT2",
+    city: "**",
+    text: "**",
+  },
+  {
+    post: "Kassör",
+    img: imgKassor,
+    name: "Cornelia Holm",
+    class: "MT2",
+    city: "**",
+    text: "**",
+  },
+  {
+    post: "Spons & kommunikation",
+    img: imgSpons,
+    name: "Tove Tångring",
+    class: "MT3",
+    city: "**",
+    text: "**",
+  },
+  {
+    post: "Tryck & PR",
+    img: imgTryck,
+    name: "Jenny Claesson",
+    class: "MT2",
+    city: "**",
+    text: "**",
+  },
+  {
+    post: "Webbansvarig",
+    img: imgWebb,
+    name: "Emma Bjelkås",
+    class: "MT3",
+    city: "Linköping",
+    text: "**",
+  },
+  {
+    post: "Eventansvarig",
+    img: imgEvent,
+    name: "Rebecka Sahlin",
+    class: "MT3",
+    city: "**",
+    text: "**",
+  },
+  {
+    post: "Mettes maskot",
+    img: imgMaskot, //replace with actual photo of maskot :)
+    name: "Mettilda",
+    class: "Classified",
+    city: "Classified",
+    text: "Jag heter Mettilda och är Mettes maskot. Med mina glajjor är jag den coolaste i Mette. Alltid.",
+  },
+];
 
 /*----- Contact info, row 1 (Kontakt.js) -----*/
 export const contact1 = [
   {
     post: "Ordförande",
-    text: "Har du generella frågor om vad som helst som angår föreningen, kontakta vår ordförande Ia Bruno på: ",
+    text: "Har du generella frågor om vad som helst som angår föreningen, kontakta vår ordförande Salma Gabot på: ",
     email: "mailto:Mettestyrelsen@medieteknik.nu",
     icon: "fas fa-paper-plane",
     linkText: "Mettestyrelsen@medieteknik.nu",
@@ -147,13 +144,12 @@ export const contact2 = [
 export const contact3 = [
   {
     post: "Sekreterare",
-    text: "Har du frågor till sekreteraren, kontakta Matilda Welander på: ",
+    text: "Har du frågor till sekreteraren, kontakta Alma Linder på: ",
     email: "mailto:Sekreterare.mette@medieteknik.nu",
     icon: "fas fa-paper-plane",
     linkText: "Sekreterare.mette@medieteknik.nu",
-  }
+  },
 ];
-
 
 /*----- Image feed (ImageFeed.js) -----*/
 export const imgFeed = [

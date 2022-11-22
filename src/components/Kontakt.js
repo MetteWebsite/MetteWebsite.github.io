@@ -1,123 +1,122 @@
-import React from 'react'
-import './Kontakt.css';
-import Icon from '../components/icons'
-import {Container, Row, Col} from 'react-bootstrap';
+import React from "react";
+import "./Kontakt.css";
+import Icon from "../components/icons";
+import { Container, Row, Col } from "react-bootstrap";
 import { useScrollTo } from "react-use-window-scroll";
-import {contact1, contact2, contact3} from "./db.js";
-import {Link} from 'react-router-dom';
+import { contact1, contact2, contact3 } from "./db.js";
+import { Link } from "react-router-dom";
 
 function Kontakt() {
-    const ScrollTo = useScrollTo();
-    return (
-      <div className="kontakt-container">
-        <div className="header-wrap">
-          <h1>Kontakt</h1>
-          <p className="descriptionText">Tveka inte för att kontakta oss!</p>
-          <div className="arrow" style={{ cursor: "pointer" }}>
-            <span
-              onClick={() =>
-                ScrollTo({
-                  top: window.innerHeight,
-                  left: 0,
-                  behavior: "smooth",
-                })
-              }
-            ></span>
-            <span
-              onClick={() =>
-                ScrollTo({
-                  top: window.innerHeight,
-                  left: 0,
-                  behavior: "smooth",
-                })
-              }
-            ></span>
-          </div>
-        </div>
-
-        <div className="head">
-          <div className="pageTitle">Kontakta oss!</div>
-          <div className="descriptionText" id="contactText">
-            Behöver du kontakta oss finns våra följande melj här nedan beroende
-            på vad din fråga handlar om
-          </div>
-          {/*--- Row 1 ---*/}
-          <div className="row">
-            {/* read from db.js */}
-            {contact1.map((data, key) => {
-              return (
-                <div class="child">
-                  <div className="post">
-                    <h2>{data.post}</h2>
-                    <p className="descriptionText" id="contactDescription">{data.text}</p>
-                    <a href={data.email}>
-                      {" "}
-                      <Icon className={data.icon} />
-                      {data.linkText}
-                    </a>
-                  </div>
-                </div>
-              );
-            })}{" "}
-            {/* end read from db.js */}
-          </div>
-            {/*--- Row 2 ---*/}
-          <div className="row">
-            {/* read from db.js */}
-            {contact2.map((data, key) => {
-              return (
-                <div class="child">
-                  <div className="post">
-                    <h2>{data.post}</h2>
-                    <p className="descriptionText" id="contactDescription">
-                      {data.text}
-                    </p>
-                    <a href={data.email}>
-                      {" "}
-                      <Icon className={data.icon} />
-                      {data.linkText}
-                    </a>
-                  </div>
-                </div>
-              );
-            })}{" "}
-            {/* end read from db.js */}
-          </div>
-          {/*--- Row 3 ---*/}
-          <div className="row">
-            {/* read from db.js */}
-            {contact3.map((data, key) => {
-              return (
-                <div class="child">
-                  <div className="post">
-                    <h2>{data.post}</h2>
-                    <p className="descriptionText" id="contactDescription">
-                      {data.text}
-                    </p>
-                    <a href={data.email}>
-                      {" "}
-                      <Icon className={data.icon} />
-                      {data.linkText}
-                    </a>
-                  </div>
-                </div>
-              );
-            })}{" "}
-            {/* end read from db.js */}
-          </div>
-
-          <div className="knapp">
-            <Link to="/mette21-22">MER OM GRUPPEN</Link>
-          </div>
+  const ScrollTo = useScrollTo();
+  return (
+    <div className="kontakt-container">
+      <div className="header-wrap">
+        <h1>Kontakt</h1>
+        <p className="descriptionText">Tveka inte för att kontakta oss!</p>
+        <div className="arrow" style={{ cursor: "pointer" }}>
+          <span
+            onClick={() =>
+              ScrollTo({
+                top: window.innerHeight,
+                left: 0,
+                behavior: "smooth",
+              })
+            }
+          ></span>
+          <span
+            onClick={() =>
+              ScrollTo({
+                top: window.innerHeight,
+                left: 0,
+                behavior: "smooth",
+              })
+            }
+          ></span>
         </div>
       </div>
-    );
+
+      <div className="head">
+        <div className="pageTitle">Kontakta oss!</div>
+        <div className="descriptionText" id="contactText">
+          Behöver du kontakta oss finns våra följande melj här nedan beroende på
+          vad din fråga handlar om
+        </div>
+        {/*--- Row 1 ---*/}
+        <div className="row">
+          {/* read from db.js */}
+          {contact1.map((data, key) => {
+            return (
+              <div class="child">
+                <div className="post">
+                  <h2>{data.post}</h2>
+                  <p className="descriptionText" id="contactDescription">
+                    {data.text}
+                  </p>
+                  <a href={data.email}>
+                    {" "}
+                    <Icon className={data.icon} />
+                    {data.linkText}
+                  </a>
+                </div>
+              </div>
+            );
+          })}{" "}
+          {/* end read from db.js */}
+        </div>
+        {/*--- Row 2 ---*/}
+        <div className="row">
+          {/* read from db.js */}
+          {contact2.map((data, key) => {
+            return (
+              <div class="child">
+                <div className="post">
+                  <h2>{data.post}</h2>
+                  <p className="descriptionText" id="contactDescription">
+                    {data.text}
+                  </p>
+                  <a href={data.email}>
+                    {" "}
+                    <Icon className={data.icon} />
+                    {data.linkText}
+                  </a>
+                </div>
+              </div>
+            );
+          })}{" "}
+          {/* end read from db.js */}
+        </div>
+        {/*--- Row 3 ---*/}
+        <div className="row">
+          {/* read from db.js */}
+          {contact3.map((data, key) => {
+            return (
+              <div class="child">
+                <div className="post">
+                  <h2>{data.post}</h2>
+                  <p className="descriptionText" id="contactDescription">
+                    {data.text}
+                  </p>
+                  <a href={data.email}>
+                    {" "}
+                    <Icon className={data.icon} />
+                    {data.linkText}
+                  </a>
+                </div>
+              </div>
+            );
+          })}{" "}
+          {/* end read from db.js */}
+        </div>
+
+        <div className="knapp">
+          <Link to="/mette22-23">MER OM GRUPPEN</Link>
+        </div>
+      </div>
+    </div>
+  );
 }
 
 export default Kontakt;
-
-
-
 
 // {/* ------Ordförande------- */ }
 // <div class="child">
@@ -192,7 +191,7 @@ export default Kontakt;
 //                 </div>
 
 // {/* <div className="knapp">
-//                     <a href="/mette21-22">
+//                     <a href="/mette22-23">
 //                         <button type="button">
 //                             Mer om gruppen
 //                         </button>

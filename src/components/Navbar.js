@@ -1,63 +1,60 @@
-import React, {useState} from 'react';
-import {Link} from 'react-router-dom';
-import MetteLogga from '../images/MetteLogga.png';
-import {Button} from './Button';
-import 'font-awesome/css/font-awesome.min.css';
-import './Navbar.css';
-
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import MetteLogga from "../images/MetteLogga.png";
+import { Button } from "./Button";
+import "font-awesome/css/font-awesome.min.css";
+import "./Navbar.css";
 
 function Navbar() {
-    const [click, setClick] = useState(false);
-    const [Button, setButton] = useState(true);
-    const [navbar,setNavbar] = useState(false);
+  const [click, setClick] = useState(false);
+  const [Button, setButton] = useState(true);
+  const [navbar, setNavbar] = useState(false);
 
-    const handleClick = () => setClick(!click);
-    const closeMobileMenu = () => setClick(false);
-  
-    const showButton = () => {
-      if (window.innerWidth <= 960) {
-        setButton(false);
-      } else {
-        setButton(true); 
-      }
-    };
-      window.addEventListener('resize', showButton);
+  const handleClick = () => setClick(!click);
+  const closeMobileMenu = () => setClick(false);
 
-      /* -----Navbar appear when scrolling------*/
-      const navbarChange = () => {
-        if(window.scrollY >= 80) {
-          setNavbar(true);
-        } else {
-          setNavbar(false);
-        }
-      }
-      window.addEventListener('scroll', navbarChange); //show at the website
+  const showButton = () => {
+    if (window.innerWidth <= 960) {
+      setButton(false);
+    } else {
+      setButton(true);
+    }
+  };
+  window.addEventListener("resize", showButton);
 
-    return (
-        <>
-        {/* <nav className="navbar active"> */}
-        <nav className={navbar ? 'navbar active' : 'navbar' }>
+  /* -----Navbar appear when scrolling------*/
+  const navbarChange = () => {
+    if (window.scrollY >= 80) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  };
+  window.addEventListener("scroll", navbarChange); //show at the website
 
+  return (
+    <>
+      {/* <nav className="navbar active"> */}
+      <nav className={navbar ? "navbar active" : "navbar"}>
         <div className="navbar-container">
+          <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+            <img src={MetteLogga} height={35} width={35} />
+            <div className="navText">METTE</div>
+          </Link>
 
-              <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-                <img src={MetteLogga} height={35} width={35}/> 
-                <div className="navText">
-                  METTE 
-                </div>
-              </Link>
-
-              {/* hamburger and cross icon */}
-              <div className='menu-icon' onClick={handleClick}>
-                <i className={click ? 'fa fa-times' : 'fa fa-bars'} aria-hidden="true"/> 
-              </div>
+          {/* hamburger and cross icon */}
+          <div className="menu-icon" onClick={handleClick}>
+            <i
+              className={click ? "fa fa-times" : "fa fa-bars"}
+              aria-hidden="true"
+            />
+          </div>
 
           {/* Header titles */}
-          <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-
-            <li className='nav-item'>
-              <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-                  <p className="navText">Hem</p>
+          <ul className={click ? "nav-menu active" : "nav-menu"}>
+            <li className="nav-item">
+              <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+                <p className="navText">Hem</p>
               </Link>
             </li>
 
@@ -71,27 +68,63 @@ function Navbar() {
               </Link>
             </li> */}
 
-            <li className='nav-item'>
-              <Link to='/mette21-22' className='nav-links' onClick={closeMobileMenu}>
-                  <p className="navText">Mette 21/22</p>
+            <li className="nav-item">
+              <Link
+                to="/mette22-23"
+                className="nav-links"
+                onClick={closeMobileMenu}
+              >
+                <p className="navText">Mette 22/23</p>
               </Link>
             </li>
 
-            <li className='nav-item'>
-              <Link to='/kontakt' className='nav-links' onClick={closeMobileMenu}>
-                  <p className="navText">Kontakt</p>
+            <li className="nav-item">
+              <Link
+                to="/kontakt"
+                className="nav-links"
+                onClick={closeMobileMenu}
+              >
+                <p className="navText">Kontakt</p>
               </Link>
             </li>
 
-            <li className='nav-item'>
-              <a href="https://www.instagram.com/mettemedbandana/" className='nav-links' onClick={closeMobileMenu} style={{fontSize: "25px"}}>
-              <i className={click ? 'fab fa-instagram' : 'fab fa-instagram'} aria-hidden="true"/> 
+            <li className="nav-item">
+              <Link
+                to="/dokument"
+                className="nav-links"
+                onClick={closeMobileMenu}
+              >
+                <p className="navText">Dokument</p>
+              </Link>
+            </li>
+
+            <li className="nav-item">
+              <a
+                href="https://www.instagram.com/mettemedbandana/"
+                className="nav-links"
+                onClick={closeMobileMenu}
+                style={{ fontSize: "25px" }}
+              >
+                <i
+                  className={click ? "fab fa-instagram" : "fab fa-instagram"}
+                  aria-hidden="true"
+                />
               </a>
             </li>
 
-            <li className='nav-item'>
-              <a href="https://www.facebook.com/MTMette/" className='nav-links' onClick={closeMobileMenu} style={{fontSize: "25px"}}>
-              <i className={click ? 'fab fa-facebook-square' : 'fab fa-facebook-square'} aria-hidden="true"/> 
+            <li className="nav-item">
+              <a
+                href="https://www.facebook.com/MTMette/"
+                className="nav-links"
+                onClick={closeMobileMenu}
+                style={{ fontSize: "25px" }}
+              >
+                <i
+                  className={
+                    click ? "fab fa-facebook-square" : "fab fa-facebook-square"
+                  }
+                  aria-hidden="true"
+                />
               </a>
             </li>
 
