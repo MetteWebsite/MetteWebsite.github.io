@@ -28,7 +28,7 @@ export function CollapseContainer() {
       </div>
 
       <div className="space">
-        <Collapse label="METTE 22/23">
+        <Collapse label="METTE 21/22">
           {" "}
           {/* css kan ändras på /components/Collapse/style/Collapse.js */}
           <img className="maritImg" src={mette9} />
