@@ -34,6 +34,9 @@ export function FooterContainer() {
             <Link to="/kontakt" className="footLink2">
               Kontakt
             </Link>
+            <Link to="/dokument" className="footLink2">
+              Dokument
+            </Link>
           </Footer.Column>
 
           <Footer.Column>
