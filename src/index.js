@@ -10,7 +10,7 @@ import { HashRouter } from 'react-router-dom'
 //     , 
 // document.getElementById('root')
 // );
-
+<p>test</p>
 ReactDOM.render(
     <React.StrictMode>
       <HashRouter>
