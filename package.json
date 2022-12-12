@@ -2,7 +2,7 @@
   "name": "webb",
   "version": "0.1.0",
   "description": "MetteWebb",
-  "main": "index.js",
+  "main": "index.html",
   "private": true,
   "dependencies": {
     "@fortawesome/free-regular-svg-icons": "^5.15.4",
