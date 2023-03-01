@@ -2,9 +2,10 @@
   "homepage": "http://MetteWebsite.github.io/webb",
   "name": "webb",
   "version": "0.1.0",
+  "private": true,
   "description": "MetteWebb",
   "main": "index.html",
-  "private": true,
+  
   "dependencies": {
     "@fortawesome/free-regular-svg-icons": "^5.15.4",
     "@testing-library/jest-dom": "^5.11.4",
@@ -32,13 +33,10 @@
     "webpack-cli": "^5.0.1"
   },
   "scripts": {
-    "test": "test",
-    "predeploy": "npm run build",
-    "deploy": "npm run deploy",
-    "clean": "rm -rf dist/*",
-    "build": "webpack",
-    "dev": "webpack serve",
-    "start": "react-scripts start"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "repository": {
     "type": "git",
