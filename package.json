@@ -2,7 +2,7 @@
   "name": "webb",
   "version": "0.1.0",
   "private": true,
-  "homepage": "mettewebsite.github.io/",
+  "homepage": "mettewebsite.github.io",
   "description": "MetteWebb",
   "main": "index.html",
   "dependencies": {
@@ -37,7 +37,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://mettewebsite.github.io/"
+    "url": "https://mettewebsite.github.io"
   },
   "keywords": [
     "Mette",
