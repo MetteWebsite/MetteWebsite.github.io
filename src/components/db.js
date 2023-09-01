@@ -83,10 +83,10 @@ export const profile = [
   {
     post: "Mettes maskot",
     img: imgMaskot, //replace with actual photo of maskot :)
-    name: "Mettilda",
+    name: "Metana",
     class: "Classified",
     city: "Classified",
-    text: "Jag heter Mettilda och är Mettes maskot. Med mina glajjor är jag den coolaste i Mette. Alltid.",
+    text: "Jag heter Metana och är Mettes maskot.", // lägg till nåt kul
   },
 ];
 
@@ -94,21 +94,21 @@ export const profile = [
 export const contact1 = [
   {
     post: "Ordförande",
-    text: "Har du generella frågor om vad som helst som angår föreningen, kontakta vår ordförande Salma Gabot på: ",
+    text: "Har du generella frågor om vad som helst som angår föreningen, kontakta vår ordförande Alva Bergwall på: ",
     email: "mailto:Mettestyrelsen@medieteknik.nu",
     icon: "fas fa-paper-plane",
     linkText: "Mettestyrelsen@medieteknik.nu",
   },
   {
     post: "Kassör",
-    text: "Undrar du över något som angår Mettes ekonomi, kan du kontakta vår kassör Jessie Chow på: ",
+    text: "Undrar du över något som angår Mettes ekonomi, kan du kontakta vår kassör Johanna Eklundh på: ",
     email: "mailto:Mettekassor@medieteknik.nu",
     icon: "fas fa-paper-plane",
     linkText: "Mettekassor@medieteknik.nu",
   },
   {
     post: "Event",
-    text: "Har du frågor angående våra kommande event och aktiviteter? Kontakta Tilda Hylander på: ",
+    text: "Har du frågor angående våra kommande event och aktiviteter? Kontakta Andrea Belin på: ",
     email: "mailto:Metteevent@medieteknik.nu",
     icon: "fas fa-paper-plane",
     linkText: "Metteevent@medieteknik.nu",
@@ -119,21 +119,21 @@ export const contact1 = [
 export const contact2 = [
   {
     post: "Företagsansvarig",
-    text: "Vill ditt företag diskutera om samarbeten eller sponsra Mette? Kontakta Lovisa Svensson: ",
+    text: "Vill ditt företag diskutera om samarbeten eller sponsra Mette? Kontakta Vanessa Ivarsson: ",
     email: "mailto:Samarbete.mette@medieteknik.nu",
     icon: "fas fa-paper-plane",
     linkText: "Samarbete.mette@medieteknik.nu",
   },
   {
     post: "Tryck och PR",
-    text: "Frågor angående Mettes allmänna marknadsföring, Kontakta Johanna Folde på: ",
+    text: "Frågor angående Mettes allmänna marknadsföring, Kontakta Elsa Tärnbrant på: ",
     email: "mailto:Mettepr@medieteknik.nu",
     icon: "fas fa-paper-plane",
     linkText: "Mettepr@medieteknik.nu",
   },
   {
     post: "Webbansvarig",
-    text: "Hittar du något konstigt eller har du frågor om hemsidans innehåll, kontakta Cindy Khuong på: ",
+    text: "Hittar du något konstigt eller har du frågor om webbsidans innehåll, kontakta Sofia Lundström på: ",
     email: "mailto:Mettewebb@medieteknik.nu",
     icon: "fas fa-paper-plane",
     linkText: "Mettewebb@medieteknik.nu",
@@ -144,7 +144,7 @@ export const contact2 = [
 export const contact3 = [
   {
     post: "Sekreterare",
-    text: "Har du frågor till sekreteraren, kontakta Alma Linder på: ",
+    text: "Har du frågor till sekreteraren, kontakta Julia Eriksson på: ",
     email: "mailto:Sekreterare.mette@medieteknik.nu",
     icon: "fas fa-paper-plane",
     linkText: "Sekreterare.mette@medieteknik.nu",

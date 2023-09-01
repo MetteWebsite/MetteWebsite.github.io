@@ -44,7 +44,7 @@ function Spons() {
             om vad det innebär eller har du frågor gällande marknadsföringenså kontakta gärna vår företagsansvarig
             <a href="mailto:Samarbete.mette@medieteknik.nu">
               {" "}
-              Lovisa Svensson.
+              Vanessa Ivarsson.
             </a>
           </p>
         </div>
