@@ -13,12 +13,6 @@ body {
     --bg-opacity: 0.3; /* Initial opacity */
 }
 
-@media (max-width: 768px) {
-    body {
-        width: 100%;
-        height: 100%;
-    }
-
 body::before {
     content: "";
     position: fixed;
@@ -503,7 +497,7 @@ button[label="STYRELSEN"]::before {
 
 @media (max-width: 480px) {
     .scroll-down-arrow {
-        bottom: 1vh;
+        bottom: 2vh;
     }
 
     .arrow {
@@ -901,7 +895,6 @@ button[label="STYRELSEN"]::before {
     .bottom-section {
         padding: 1vw;
         margin-top: 3vh;
-        width: auto;
     }
 
     .bottom-section img {
