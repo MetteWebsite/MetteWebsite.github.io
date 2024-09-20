@@ -1,7 +1,7 @@
 body {
     width: 100%;
     height: 100%;
-    background-image: url('images/Mette24:25.JPG');
+    background-image: url('../client/images/Mette24:25.JPG');
     background-size: cover;
     background-position: top;
     background-attachment: fixed;
@@ -324,7 +324,7 @@ a {
 }
 
 .tjejfikaButton {
-    background-image: url('images/button-container/Tjejfika.png');
+    background-image: url('../client/images/button-container/Tjejfika.png');
 }
 
 button[label="TJEJFIKA"]::before {
@@ -332,7 +332,7 @@ button[label="TJEJFIKA"]::before {
 }
 
 .ovveinvigningButton {
-    background-image: url('images/button-container/Ovveinvigning.jpg');
+    background-image: url('../client/images/button-container/Ovveinvigning.jpg');
 }
 
 button[label="OVVEINVIGNING"]::before {
@@ -340,7 +340,7 @@ button[label="OVVEINVIGNING"]::before {
 }
 
 .rosaVeckanButton {
-    background-image: url('images/button-container/RosaVeckan.png');
+    background-image: url('../client/images/button-container/RosaVeckan.png');
 }
 
 button[label="ROSA VECKAN"]::before {
@@ -348,7 +348,7 @@ button[label="ROSA VECKAN"]::before {
 }
 
 .enkvallButton {
-    background-image: url('images/button-container/Gaia.jpg');
+    background-image: url('../client/images/button-container/Gaia.jpg');
 }
 
 button[label="EN KVÄLL MED GAIA"]::before {
@@ -356,7 +356,7 @@ button[label="EN KVÄLL MED GAIA"]::before {
 }
 
 .damsittningButton {
-    background-image: url('images/button-container/Damsittning.png');
+    background-image: url('../client/images/button-container/Damsittning.png');
 }
 
 button[label="DAMSITTNINGEN"]::before {
@@ -364,7 +364,7 @@ button[label="DAMSITTNINGEN"]::before {
 }
 
 .sponsButton {
-    background-image: url('images/button-container/Spons.png');
+    background-image: url('../client/images/button-container/Spons.png');
 }
 
 button[label="SPONSORER"]::before {
@@ -372,7 +372,7 @@ button[label="SPONSORER"]::before {
 }
 
 .markenButton {
-    background-image: url('images/button-container/OvveMarken.png');
+    background-image: url('../client/images/button-container/OvveMärken.png');
 }
 
 button[label="METTES MÄRKEN"]::before {
@@ -380,7 +380,7 @@ button[label="METTES MÄRKEN"]::before {
 }
 
 .sokMetteButton {
-    background-image: url('images/button-container/SokMette.jpg');
+    background-image: url('../client/images/button-container/SokMette.jpg');
 }
 
 button[label="VILL DU SÖKA TILL METTE?"]::before {
@@ -388,7 +388,7 @@ button[label="VILL DU SÖKA TILL METTE?"]::before {
 }
 
 .styrelsenButton {
-    background-image: url('images/button-container/Styrelsen.jpg');
+    background-image: url('../client/images/button-container/Styrelsen.jpg');
 }
 
 button[label="STYRELSEN"]::before {
@@ -1082,7 +1082,7 @@ textarea, input[type="email"] {
 
 /* Bakgrundsbild */
 .background-tjejfika-image {
-    background-image: url('images/button-container/Tjejfika.png');
+    background-image: url('../client/images/button-container/Tjejfika.png');
     background-size: cover;
     background-position: center;
     position: fixed;
@@ -1265,7 +1265,7 @@ textarea, input[type="email"] {
 
     .person-info {
         width: 90vw;
-        max-width: none;
+        max-width: none; /* Ta bort max-width för mindre skärmar */
         padding: 4vw;
     }
 
@@ -1278,7 +1278,7 @@ textarea, input[type="email"] {
         margin-top: 10vh;
         padding: 5vw;
         width: 90vw;
-        max-width: none; 
+        max-width: none; /* Ta bort max-width för mindre skärmar */
         margin-bottom: 10vh;
     }
 
@@ -1397,7 +1397,7 @@ textarea, input[type="email"] {
 
 /* Bakgrundsbild */
 .background-ovve-image {
-    background-image: url('images/button-container/Ovveinvigning.jpg');
+    background-image: url('../client/images/button-container/Ovveinvigning.jpg');
     background-size: cover;
     background-position: center;
     position: fixed;
@@ -1449,7 +1449,7 @@ textarea, input[type="email"] {
 }
 
 .background-rosaVeckan-image {
-    background-image: url('images/button-container/RosaVeckan.png');
+    background-image: url('../client/images/button-container/RosaVeckan.png');
     background-size: cover;
     background-position: center;
     position: fixed;
@@ -1498,7 +1498,7 @@ textarea, input[type="email"] {
 
 /* Bakgrundsbild */
 .background-gaia-image {
-    background-image: url('images/button-container/Gaia.jpg');
+    background-image: url('../client/images/button-container/Gaia.jpg');
     background-size: cover;
     background-position: center;
     position: fixed;
@@ -1549,7 +1549,7 @@ textarea, input[type="email"] {
 
 /* Bakgrundsbild */
 .background-damsittning-image {
-    background-image: url('images/button-container/Damsittning.png');
+    background-image: url('../client/images/button-container/Damsittning.png');
     background-size: cover;
     background-position: center;
     position: fixed;
@@ -1600,7 +1600,7 @@ textarea, input[type="email"] {
 }
 
 .background-sponsor-image {
-    background-image: url('images/button-container/Spons.png');
+    background-image: url('../client/images/button-container/Spons.png');
     background-size: cover;
     background-position: center;
     position: fixed;
@@ -1650,7 +1650,7 @@ textarea, input[type="email"] {
 }
 
 .background-marken-image {
-    background-image: url('images/button-container/OvveMärken.png');
+    background-image: url('../client/images/button-container/OvveMärken.png');
     background-size: cover;
     background-position: center;
     position: fixed;
@@ -1707,7 +1707,7 @@ textarea, input[type="email"] {
 }
 
 .background-sokMette-image {
-    background-image: url('images/button-container/SokMette.jpg');
+    background-image: url('../client/images/button-container/SokMette.jpg');
     background-size: cover;
     background-position: center;
     position: fixed;
@@ -1745,6 +1745,7 @@ textarea, input[type="email"] {
 }
 
 /*BOTTOM SECTION REFERENSER*/
+/* Grundstil för p-taggarna som fungerar som knappar */
 #metteLink,
 #contactLink {
     cursor: pointer; 
@@ -1769,6 +1770,7 @@ textarea, input[type="email"] {
 
 /*-------------------RESPONSIVT TILLÄGG--------------------------*/
 
+/* Mobil och små surfplattor */
 @media (max-width: 768px) {
     .text-content-ovve, 
     .text-content-rosaVeckan, 
