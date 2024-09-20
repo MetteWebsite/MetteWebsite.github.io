@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,6 +12,543 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <h3>Hello Mette!</h3>
+    <article class="header-container" id="header">
+        <!-- Header content -->
+        <div class="metteIcon-container">
+            <img src="images/Mette logga 2023.png" alt="Bild på Mettes logga">
+        </div>
+        <div class="title-container">
+            <h1>METTE</h1>
+        </div>
+
+        <!-- Buttons in header -->
+        <div class="header-button-container">
+            <button class="homeButton">HEM</button> <!-- Lägg till class "button" -->
+            <button class="currentMetteButton" >METTE 24/25</button>
+            <button class="contactButton" >KONTAKT</button>
+        </div>
+
+        <!-- Social media buttons -->
+        <div class="socialMedia-container">
+            <!-- Instagram Button -->
+            <button class="instagramButton">
+                <a href="https://www.instagram.com/mettemedbandana" class="fa fa-instagram"></a>
+            </button>
+
+            <!-- Facebook Button -->
+            <button class="facebookButton">
+                <a href="https://www.facebook.com/MTMette/" class="fa fa-facebook"></a>
+            </button>
+        </div>
+    </article>
+
+    <p id='whoAreWe' class="who-are-we">VILKA ÄR VI I METTE 24/25?</p> 
+    <p id='pleaseContactUs' class="please-contact-us">KONTAKTA OSS!</p>
+
+    <!-- Scroll down arrow-->
+    <div class="scroll-down-arrow">
+        <div class="arrow"></div>
+        <div class="arrow"></div>
+        <div class="arrow"></div>
+    </div>
+
+    <!-- About mette section -->
+    <article class="content-section" id="content">
+        <div class="mette-content">
+            <!-- Image to the left -->
+            <img src="images/Mette logga 2023.png" alt="Mettes logga">
+            <!-- Text content to the right -->
+            <div>
+                <p class="titleContentSection">MEDIETEKNIKPROGRAMMETS TJEJFÖRENING</p>
+                <p class="infoMette1">Hej! Det är vi som är Medieteknikprogrammets tjejförening Mette!
+                    Mette är en förening för alla som identifierar sig som tjej eller icke-binär
+                    och studerar Medieteknik på Linköpings Universitet, campus Norrköping. Vi
+                    arbetar för att främja gemenskapen mellan alla tjejer och icke-binära på
+                    MT-programmet. Vi anordnar olika roliga aktiviteter, vissa är enbart för
+                    tjejer och icke-binära medan andra aktiviteter är till för alla som pluggar MT.</p>
+        
+                <p class="infoMette2">
+                    Du vill inte missa det skojiga vi ska ha det här kommande året så följ oss på
+                    <a href="https://www.facebook.com/MTMette/">Facebook</a> och
+                    <a href="https://www.instagram.com/mettemedbandana/">Instagram</a> för att
+                    hålla dig uppdaterad om våra kommande aktiviteter och event så ses vi där!
+                </p>
+            </div>
+        </div>
+
+        <div id ="metteNOW-content">
+            <!-- Här kommer 8 bilder att visas när "Mette 24/25" klickas -->
+            <div id="metteNOW-content1">
+                <img src="images/metteNOW-content/Ordforande.png" alt="Ordförande Agnes Groth">
+                <img src="images/metteNOW-content/Kassor.png" alt="Kassör Ella Bergström">
+                <img src="images/metteNOW-content/Webbansvarig.png" alt="Webbansvarig Adna Mari&#263">
+                <img src="images/metteNOW-content/Eventansvarig.png" alt="Eventansvarig Clara Bergström">
+            </div>
+            <div id="metteNOW-content2">
+                <img src="images/metteNOW-content/Tryck&PR.png" alt="Tryck&PR Astrid Helzén">
+                <img src="images/metteNOW-content/Sekreterare.png" alt="Sekreterare Rebecca Arkhed">
+                <img src="images/metteNOW-content/Spons&Kommunikation.png" alt="Spons&Kommunikation Andrea Åstrand">
+                <img src="images/metteNOW-content/Maskot.png" alt="Metadora">
+            </div>
+            
+
+        </div>
+        
+        <div id ="marit-content">
+            <p class="marit-title"> MARIT </p>
+            <p class = "marit-text">Efter en mycket händelserik resa av hårt arbete och skoj tillsammans som Mette
+                så slutar inte vår resa här! Vi kommer istället att minnas som Marit.</p>
+                <div class ="marit-content">
+                    <button class="marit2324Button" onclick="showMaritImage('marit2324Button', 'marit-image2324')">METTE 23/24</button>
+                    <img id="marit-image2324" src="images/MARIT/mette23-24.jpg" alt="Marit 23/24 saknar bild.">
+
+                    <button class="marit2223Button" onclick="showMaritImage('marit2223Button', 'marit-image2223')">METTE 22/23</button>
+                    <img id="marit-image2223" src="images/MARIT/mette22-23.jpg" alt="Marit 22/23 saknar bild.">
+
+                    <button class="marit2122Button" onclick="showMaritImage('marit2122Button', 'marit-image2122')">METTE 21/22</button>
+                    <img id="marit-image2122" src="images/MARIT/mette21-22.jpg" alt="Marit 21/22 saknar bild.">
+
+                    <button class="marit2021Button" onclick="showMaritImage('marit2021Button', 'marit-image2021')">METTE 20/21</button>
+                    <img id="marit-image2021" src="images/MARIT/mette20-21.jpg" alt="Marit 20/21 saknar bild.">
+
+                    <button class="marit1920Button" onclick="showMaritImage('marit1920Button', 'marit-image1920')">METTE 19/20</button>
+                    <img id="marit-image1920" src="images/MARIT/mette19-20.jpg" alt="Marit 19/20 saknar bild.">
+
+                    <button class="marit1819Button" onclick="showMaritImage('marit1819Button', 'marit-image1819')">METTE 18/19</button>
+                    <img id="marit-image1819" src="images/MARIT/mette18-19.jpg" alt="Marit 18/19 saknar bild.">
+
+                    <button class="marit1718Button" onclick="showMaritImage('marit1718Button', 'marit-image1718')">METTE 17/18</button>
+                    <img id="marit-image1718" src="images/MARIT/mette17-18.jpg" alt="Marit 17/18 saknar bild.">
+
+                    <button class="marit1617Button" onclick="showMaritImage('marit1617Button', 'marit-image1617')">METTE 16/17</button>
+                    <img id="marit-image1617" src="images/MARIT/mette16-17.jpg" alt="Marit 16/17 saknar bild.">
+
+                    <button class="marit1516Button" onclick="showMaritImage('marit1516Button', 'marit-image1516')">METTE 15/16</button>
+                    <img id="marit-image1516" src="images/MARIT/mette15-16.jpg" alt="Marit 15/16 saknar bild.">
+
+                    <button class="marit1415Button" onclick="showMaritImage('marit1415Button', 'marit-image1415')">METTE 14/15</button>
+                    <img id="marit-image1415" src="images/MARIT/mette14-15.jpg" alt="Marit 14/15 saknar bild.">
+
+                    <button class="marit1314Button" onclick="showMaritImage('marit1314Button', 'marit-image1314')">METTE 13/14</button>
+                    <img id="marit-image1314" src="images/MARIT/mette13-14.jpg" alt="Marit 13/14 saknar bild.">
+            </div>
+        </div>
+
+        <div class="contact-us-information">
+            <h1 id="kontaktUppgifter" >KONTAKTUPPGIFTER</h1>
+            <p id="kontaktText1">Behöver du kontakta oss finns våra följande mejl här nedan beroende på vad din fråga handlar om.</p>
+            <!--<p id="kontaktText2">Du kan även fylla i vårt <a href="#bottom-section" class="orange-kontaktformular">kontaktformulär</a> som du finner längst ner på hemsidan!</p>-->
+        
+            <div class="first-contact-row"
+            <!-- Ordförande -->
+            <div class="ordforande-info person-info">
+                <h2>Ordförande</h2>
+                <p>Har du generella frågor om vad som helst som angår föreningen? Då kan du kontakta vår ordförande Agnes Groth på:</p>
+                <p id="mail" class="fa fa-paper-plane-o"> Mettestyrelsen@medieteknik.nu</p>
+            </div>
+        
+            <!-- Kassör -->
+            <div class="kassor-info person-info">
+                <h2>Kassör</h2>
+                <p>Undrar du över något som angår Mettes ekonomi? Då kan du kontakta vår kassör Ella Bergström på:</p>
+                <p id="mail" class="fa fa-paper-plane-o"> Mettekassor@medieteknik.nu</p>
+            </div>
+        
+            <!-- Webbansvarig -->
+            <div class="webbansvarig-info person-info">
+                <h2>Webbansvarig</h2>
+                <p>Hittar du något konstigt eller har du frågor om hemsidans innehåll? Då kan du kontakta Adna Maric på:</p>
+                <p id="mail" class="fa fa-paper-plane-o"> Mettewebb@medieteknik.nu</p>
+            </div>
+        
+            <!-- Eventansvarig -->
+            <div class="eventansvarig-info person-info">
+                <h2>Eventansvarig</h2>
+                <p>Har du frågor angående våra kommande event och aktiviteter? Då kan du kontakta Clara Bergström på:</p>
+                <p id="mail" class="fa fa-paper-plane-o"> Metteevent@medieteknik.nu</p>
+            </div>
+        </div>
+
+        <div class="second-contact-row">
+            <!-- Tryck & PR -->
+                <div class="tryck-och-pr-info person-info">
+                    <h2>Tryck & PR</h2>
+                    <p>Frågor angående Mettes allmänna marknadsföring? Då kan du kontakta Astrid Helzén på:</p>
+                    <p id="mail" class="fa fa-paper-plane-o"> Mettepr@medieteknik.nu</p>
+                </div>
+            
+                <!-- Sekreterare -->
+                <div class="sekreterare-info person-info">
+                    <h2>Sekreterare</h2>
+                    <p>Har du frågor angående Mettes dokument och årliga möten? Då kan du kontakta Rebecca Arkhed på:</p>
+                    <p id="mail" class="fa fa-paper-plane-o"> Sekreterare.mette@medieteknik.nu</p>
+                </div>
+            
+                <!-- Spons & Kommunikation -->
+                <div class="spons-och-kommunikation-info person-info">
+                    <h2>Spons & Kommunikation</h2>
+                    <p>Vill ditt företag diskutera om samarbeten eller sponsra Mette? Då kan du kontakta Andrea Åstrand på:</p>
+                    <p id="mail"class="fa fa-paper-plane-o"> Samarbete.mette@medieteknik.nu</p>
+                </div>
+            </div>
+            <button id="learnMoreButton">Vill du veta mer om oss?</button>
+        </div>
+        
+        <div class ="event-content">
+            <p class ="infoEvent">
+                Varje år håller Mette i olika event som du bland annat kan läsa mer om här nedan! Vi planerar
+                tillsammans traditionella event som MTs ovveinvigning, men det är alltid lika roligt och
+                spännande att få jobba med nya projekt. Utöver våra event, kan du även hitta övrig
+                information kring Mette.
+            </p>
+            <p>Klicka på bilderna nedan för att få reda på mer!</p>
+        </div>
+        
+        <div class="button-container">
+            <div class="first-buttons-row">
+                <button class="tjejfikaButton" label="TJEJFIKA"></button>
+                <button class="ovveinvigningButton" label="OVVEINVIGNING"></button>
+                <button class="rosaVeckanButton" label="ROSA VECKAN"></button>
+            </div>
+            <div class="second-buttons-row">
+                <button class="enkvallButton" label="EN KVÄLL MED GAIA"></button>
+                <button class="damsittningButton" label="DAMSITTNINGEN"></button>
+                <button class="sponsButton" label="SPONSORER"></button>
+            </div>
+            <div class="third-buttons-row">
+                <button class="markenButton" label="METTES MÄRKEN"></button>
+                <button class="sokMetteButton" label="VILL DU SÖKA TILL METTE?"></button>
+                <button class="styrelsenButton" label="STYRELSEN" onclick="window.location.href='https://www.medieteknik.nu/'"></button>
+            </div>
+        </div>
+
+        <div id="bottom-section" class="bottom-section">
+            <img src="images/Mette logga 2023.png" alt="Mette logga">
+            <div class="column">
+                <h2>Hitta oss</h2>
+                <p>Linköpings Universitet på Campus Norrköping</p>
+                <p>Bredgatan 34</p>
+                <p>602 21 Norrköping</p>
+            </div>
+            <div class="column">
+                <h2>Om oss</h2>
+                <p id="metteLink">Mette 24/25</p>
+                <p id="contactLink">Kontakt</p>
+                <a id="documentLink" href="https://drive.google.com/drive/folders/1uCbm1uXPXbt2kxht3JCZpdl1tCgDiyR9?usp=drive_link" target="_blank">Dokument</a>
+            </div>
+            <!--<div class="column">
+                <h2>Kontakta oss</h2>
+                <form action="/send" method="POST">
+                    <input type="email" id="email" name="email" placeholder="Din e-postadress" class="contact-inputs" required>
+                    <textarea id="message" name="message" placeholder="Skriv ditt meddelande här" class="contact-inputs" required></textarea>
+                    <button type="submit">Skicka</button>
+                </form>
+            -->
+            </div>
+        </div>
+
+        <div id="tjejfikaContent" class="hidden">
+            <div class="background-tjejfika-image"></div>
+            <div class="white-box">
+                <button class="backButton" role="button" onclick="closeTjejfikaContent()"><span class="text">Tillbaka</span></button>
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <img src="images/Bild_kommer.png">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="images/Bild_kommer.png">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="images/Bild_kommer.png">
+                    </div>
+                    <a class="prev">&#10094;</a>
+                    <a class="next">&#10095;</a>
+                </div>
+                <div class="text-content">
+                    <h3>TJEJFIKA</h3>
+                    <p>Mette håller i en tjejfika dagen innan uppropet för alla nya kvinnliga och ickebinära studenter på
+                        Medieteknikprogrammet. Detta ger ett perfekt tillfälle för de blivande MT-studenterna att få lära
+                        känna sina klasskamrater och få en mjuk start innan skolan börjar på riktigt. Studenterna får göra
+                        lära-känna övningar, spela spel och träffa oss från Mette under fikat.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div id="ovveContent" class="hidden">
+            <div class="background-ovve-image"></div>
+            <div class="white-box">
+                <button class="backButton" role="button" onclick="closeOvveContent()"><span class="text">Tillbaka</span></button>
+                <h2 id="ovve2023">OVVEINVIGNING 2023</h2>
+                <p id="ovveTillbakablick">En tillbakablick från förra årets ovveinvigning..</p>
+                <div class="slideshow-container">
+                    <!-- Bilder från ovveinvigning -->
+                    <div class="OvveSlides fade">
+                        <img src="images/Bild_kommer.png">
+                    </div>
+                    <div class="OvveSlides fade">
+                        <img src="images/Bild_kommer.png">
+                    </div>
+                    <div class="OvveSlides fade">
+                        <img src="images/Bild_kommer.png">
+                    </div>
+                    <a class="prev">&#10094;</a>
+                    <a class="next">&#10095;</a>
+                </div>
+                <div class="text-content-ovve">
+                    <!-- Beskrivning av ovveinvigningen -->
+                    <h3>OVVEINVIGNING</h3>
+                    <p>För de medieteknikstudenter som inte har invigt sin fina orangea overall, måste bära overallen
+                        uppcabbad (armarna i ärmarna). För att få bära den nedcabbad (ärmarna knytna runt midjan/"som vanligt")
+                        bör overallen invigas på ovveinvigningen som anordnas av Mette. På invigningen kommer studenterna få 
+                        följa med på en oförglömd och fartfylld resa. Detta vill du inte missa!</p>
+        
+                    <p>Fler bilder från årets invingning finns att hitta på Mettes <a href="https://www.facebook.com/MTMette/">Facebook</a> sida.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div id="rosaVeckanContent" class="hidden">
+            <div class="background-rosaVeckan-image"></div>
+            <div class="white-box">
+                <button class="backButton" role="button" onclick="closeRosaVeckanContent()"><span class="text">Tillbaka</span></button>
+                <h2 id="rosaVeckan2023" style="color:palevioletred;">ROSA VECKAN 2023</h2>
+                <div class="slideshow-container">
+                    <!-- Bilder från ovveinvigning -->
+                    <div class="rosaVeckanSlides fade">
+                        <img src="images/Bild_kommer.png">
+                    </div>
+                    <div class="rosaVeckanSlides fade">
+                        <img src="images/Bild_kommer.png">
+                    </div>
+                    <div class="rosaVeckanSlides fade">
+                        <img src="images/Bild_kommer.png">
+                    </div>
+                    <a class="prev">&#10094;</a>
+                    <a class="next">&#10095;</a>
+                </div>
+                <div class="text-content-rosaVeckan">
+                    <!-- Beskrivning av rosa veckan -->
+                    <h3>Mette + Nora = <span style="color: pink;">&#x1F496;</h3>
+                    <p>Varje år i oktober stödjer Mette och byggnadstekniks tjejförening Nora, Rosa Bandet kampanjen genom att 
+                        hålla Rosa veckan.
+                        Under Rosa veckan bjuds det på fika, roliga aktiviteter och tävlingar där fina priser utlovas. I slutet
+                        av Rosa Veckan hålls den Rosa Puben där det tillkommer quiz, snacks och massa kul! Alla pengar som 
+                        samlas in under Rosa veckan skänks till Rosa Bandet.
+                    <p>Nora är byggnadsingenjörernas tjejförening, kolla in deras 
+                        <a href="https://www.instagram.com/nora1991_nsektionen/">Instagram</a> och 
+                        <a href="https://www.facebook.com/nora1991.nsektionen">Facebook</a>.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="gaiaContent" class="hidden">
+            <div class="background-gaia-image"></div>
+            <div class="white-box">
+                <button class="backButton" role="button" onclick="closeRosaVeckanContent()"><span class="text">Tillbaka</span></button>
+                <h2 id="gaiaEvent2023" style="color:purple;">GAIA EVENT 2023</h2>
+                <p id="gaiaTillbakablick">En mycket trevlig och inspirerande kväll tillsammans med Gaia!</p>
+                <div class="slideshow-container">
+                    <!-- Bilder från ovveinvigning -->
+                    <div class="gaiaSlides fade">
+                        <img src="images/sponsorer/gaia_logo_rgb_dark_purple.png">
+                    </div>
+                    <div class="gaiaSlides fade">
+                        <img src="images/enKvallMedGaia/IMG_0614.JPG">
+                    </div>
+                    <div class="gaiaSlides fade">
+                        <img src="images/enKvallMedGaia/IMG_0615.JPG">
+                    </div>
+                    <div class="gaiaSlides fade">
+                        <img src="images/enKvallMedGaia/IMG_0617.JPG">
+                    </div>
+                    <div class="gaiaSlides fade">
+                        <img src="images/enKvallMedGaia/IMG_0618.JPG">
+                    </div>
+                    <div class="gaiaSlides fade">
+                        <img src="images/enKvallMedGaia/IMG_0620.JPG">
+                    </div>
+                    <div class="gaiaSlides fade">
+                        <img src="images/enKvallMedGaia/IMG_0621.JPG">
+                    </div>
+                    <a class="prev">&#10094;</a>
+                    <a class="next">&#10095;</a>
+                </div>
+                <div class="text-content-gaiaEvent">
+                    <!-- Beskrivning av gaia event -->
+                    <h3> PÅ BUSSEN MED GAIA</h3>
+                    <p>Mettes huvudsponsor Gaia brukar hålla i minst ett företagsevent per år. År 2023 var detta ett  
+                        besök på Gaias kontor i Norrköping där alla, i sann På <span style="text-decoration: line-through;">
+                        spåret</span> bussen-anda, var välkomna. Massvis med olika resmål och kulturer - allt under en kväll! 
+                        Detta, samtidigt som man tävlar om ett finfint pris!
+                        
+                    <p>Vill du veta mer om Gaia eller har du några funderingar om dina möjligheter efter examen så kan du 
+                        kolla in <a href="https://gaia.se/" style="color:purple;">Gaias hemsida</a>!</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="damsittningContent" class="hidden">
+            <div class="background-damsittning-image"></div>
+            <div class="white-box">
+                <button class="backButton" role="button" onclick="closeDamsittningContent()"><span class="text">Tillbaka</span></button>
+                <h2 id="damsittningenTitle">DAMSITTNINGEN</h2>
+                <div class="slideshow-container">
+                    <div class="damsittningSlides fade">
+                        <img src="images/damsittningen2024/damsittningen2024.png">
+                    </div>
+                    <div class="damsittningSlides fade">
+                        <img src="images/damsittningen2024/IMG_7446.png">
+                    </div>
+                    
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <div class="text-content-damsittningen">
+                    <h3>En finsittning för tjejer på TekFak, campus Norrköping</h3>
+                    <p>Damsittningen är en årlig finsittning för tjejer och ickebinära som studerar på campus Norrköpings 
+                        Tekniska Fakultet. Sittningen anordnas av ett utskott som främst består av medlemmar från 
+                        tjejföreningarna på medieteknik, Mette, och byggnadsteknik, Nora, men även tjejer och ickebinära 
+                        från de andra sektionerna i TekFak. Under kvällen bjuds det på mat och underhållning som sent 
+                        kommer glömmas.</p>
+        
+                    <p>Fler bilder från Damsittningen går att hitta på Mettes foton på <a href="https://www.facebook.com/MTMette/">Facebook</a>!</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="sponsorContent" class="hidden">
+            <div class="background-sponsor-image"></div>
+            <div class="white-box">
+                <button class="backButton" role="button" onclick="closeSponsorContent()"><span class="text">Tillbaka</span></button>
+                <h2 id="sponsor2425">STORT TACK TILL VÅRA SPONSORER!</h2>
+                <div class="slideshow-container">
+                    <div class="sponsorSlides fade">
+                        <a href="https://gaia.se/" target="_blank">
+                            <img src="images/sponsorer/gaia_logo_rgb_dark_purple.png">
+                        </a>
+                    </div>
+                    <div class="sponsorSlides fade">
+                        <a href="https://www.ica.se/butiker/nara/norrkoping/ica-nara-strommen-norrkoping-1004556/" target="_blank">
+                            <img src="images/sponsorer/ICA Svart logga.png">
+                        </a>
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <div class="text-content-sponsor">
+                    <h3>Vill ni samarbeta med oss?</h3>
+                    <p>Är du som företag intresserad av att sponsra Mette och vill veta mer om vad det innebär eller har 
+                        du frågor gällande marknadsföringen så kontakta gärna vår företagsansvarig, Andrea Åstrand, på
+                        <p style="color:#ff7300" class="fa fa-paper-plane-o">  SAMARBETE.METTE@MEDIETEKNIK.NU</p></p>
+                </div>
+            </div>
+        </div>
+        
+        <div id="markenContent" class="hidden">
+            <div class="background-marken-image"></div>
+            <div class="white-box">
+                <button class="backButton" role="button" onclick="closeMarkenContent()"><span class="text">Tillbaka</span></button>
+                <h2 id="marken2425">METTES MÄRKEN</h2>
+                <div class="slideshow-container">
+                    <div class="markenSlides fade">
+                        <img src="images/marken/girlSupportMarke.PNG">
+                    </div>
+                    <div class="markenSlides fade">
+                        <img src="images/Mette logga 2023.png">
+                    </div>
+                    <div class="markenSlides fade">
+                        <img src="images/marken/KvinnoSymbolMarke.jpg">
+                    </div>
+                    <div class="markenSlides fade">
+                        <img src="images/marken/ickebinarMarke.png">
+                    </div>
+                    <div class="markenSlides fade">
+                        <img src="images/marken/OvveInvMarke.png">
+                    </div>
+                    <div class="markenSlides fade">
+                        <img src="images/marken/weCanDoItMarke.png">
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <div class="text-content-marken">
+                    <h3>HAR DU EN METTE-APPROVED OVVE?</h3>
+                    <p>Mette har just nu sex märken där de alla delvis representerar de värderingar som Mette står för. 
+                        Märkena säljs inte regelbundet men kontakta oss gärna ifall ni är intresserade.</p>
+                    <p>När vi säljer märken kommer det att läggas upp info om det på Mettes <a href="https://www.instagram.com/mettemedbandana/">Instagram</a>!</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="sokMetteContent" class="hidden">
+            <div class="background-sokMette-image"></div>
+            <div class="white-box">
+                <button class="backButton" role="button" onclick="closeSokMetteContent()"><span class="text">Tillbaka</span></button>
+                <h2 id="sokMette">SÖK TILL METTE!</h2>
+                <div class="text-content-sokMette">
+                    <p style="margin-bottom: 10%; text-align:center;"">Är du intresserad av att vara med i en studentförening, 
+                        anorda spännande event och få nya erfarenheter så låter Mette något för dig! En beskrivning på de olika 
+                        posterna finns här nedan och har du några specifika frågor så är du varmt välkommen att ta kontakt med 
+                        oss. Håll utkik på våra sociala medier för att läsa mer om hur du kan söka och/eller nominera när 
+                        sökperioden öppnas igen!</p>
+                    <h2>POSTBESKRIVNINGAR</h2>
+                        <div>
+                            <h3 id="post">ORDFÖRANDE</h3>
+                            <p>Ordföranden har huvudansvaret att fördela arbetsuppgifter och se till att beslut implementeras. 
+                                Dessutom är det ordförandens uppgift att representera Mette och föra dess talan i olika sammanhang. 
+                                Ordförande kan få vara mötesordförande, både på styrelsemöten och på stormöten. Ordföranden har ansvar 
+                                för att följa upp och utvärdera Mettes verksamhet och resultat samt att sammanställa Mettes 
+                                verksamhetsberättelse som dokumenterar aktiviteter och framsteg under året. 
+                            </p>
+                        </div>
+                        <div>
+                            <h3 id="post">KASSÖR</h3>
+                            <p>Kassörens främsta ansvar är att sköta Mettes ekonomi. Uppgifterna som ingår i rollen är, bland annat,
+                                att ta fram en budget för året, bokföra intäkter och utgångar och fakturera sponsorer.</p>
+                        </div>
+                        <div>
+                            <h3 id="post">SEKRETERARE</h3>
+                            <p>Sekreteraren ansvarar för att anteckna under vanliga möten samt stormöten för smidig återblick på 
+                                det som beslutats. Inför stormöten skickar sekreteraren även ut kallelser och handlingar till 
+                                medlemmarna. Sekreteraren ansvarar för Mettes dokumentation samt bistå andra poster vid behov.</p>
+                        </div>
+                        <div>
+                            <h3 id="post">EVENTANSVARIG</h3>
+                            <p>Som eventansvarig är det ens yttersta ansvar att se till att eventen sker så smidigt som möjligt. 
+                                Detta innefattar främst ansvarsområden inom eventplanering, eventschema och beskrivningar till 
+                                event på sociala plattformar. Mette arrangerar bland annat MTs Ovveinvigning,  Rosa veckan och 
+                                Damsittningen. 
+                            </p>
+                        </div>
+                        <div>
+                            <h3 id="post">SPONS & KOMMUNIKATION</h3>
+                            <p>Inom spons och kommunikation har man ansvar över samspelet mellan Mette och andra företag. 
+                                Det är du som ansöker om samarbete och skriver kontrakt. Du är även kontaktperson vid 
+                                företagsevent som Mette har under året.
+                            </p>
+                        </div>
+                        <div>
+                            <h3 id="post">TRYCK & PR</h3>
+                            <p>Tryck & PR ansvarar framförallt över sociala medier och allt grafiskt material som behövs i 
+                                samband med vårt arbete. Det kan vara omslagsbilder, affischer, märken och liknande antingen 
+                                i samarbete med företag, andra föreningar eller bara event Mette själva håller i.
+                            </p>
+                        </div>
+                        <div>
+                            <h3 id="post">WEBBANSVARIG</h3>
+                            <p>Som webbansvarig är det ditt huvudansvar att ta hand om mettes webbsida. Detta kan du göra genom 
+                                att göra en helt ny sida eller uppdatera den befintliga! Du hjälper även resten av Mette när 
+                                de behöver och kan därför anpassa din arbetsmängd.
+                            </p>
+                        </div>
+                </div>
+            </div>
+        </div>
+        
+
+    </article>
+    <script src="app.js"></script>
+    <script src="server.js"></script>
+
 </body>
 </html>
