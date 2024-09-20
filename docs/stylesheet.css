@@ -10,7 +10,7 @@ body {
     overflow-x: hidden;
     margin: 0;
     padding: 0;
-    --bg-opacity: 0.3; 
+    --bg-opacity: 0.3; /* Initial opacity */
 }
 
 body::before {
