@@ -503,7 +503,7 @@ button[label="STYRELSEN"]::before {
 
 @media (max-width: 480px) {
     .scroll-down-arrow {
-        bottom: 1vh;
+        bottom: 2vh;
     }
 
     .arrow {
@@ -901,7 +901,6 @@ button[label="STYRELSEN"]::before {
     .bottom-section {
         padding: 1vw;
         margin-top: 3vh;
-        width: auto;
     }
 
     .bottom-section img {
