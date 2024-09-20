@@ -13,12 +13,6 @@ body {
     --bg-opacity: 0.3; /* Initial opacity */
 }
 
-@media (max-width: 768px) {
-    body {
-        width: auto;
-        height: 100%;
-    }
-
 body::before {
     content: "";
     position: fixed;
