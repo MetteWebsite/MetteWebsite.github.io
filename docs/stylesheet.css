@@ -10,7 +10,20 @@ body {
     overflow-x: hidden;
     margin: 0;
     padding: 0;
-    --bg-opacity: 0.3; /* Initial opacity */
+    --bg-opacity: 0.3; 
+}
+
+@media (max-width: 768px) {
+    body {
+        width: auto;
+        height: 100%;
+    }
+}
+@media (max-width: 480px) {
+    body {
+        width: auto;
+        height: auto;
+    }
 }
 
 body::before {
