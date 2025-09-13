@@ -24,7 +24,7 @@
         <!-- Buttons in header -->
         <div class="header-button-container">
             <button class="homeButton">HEM</button> <!-- Lägg till class "button" -->
-            <button class="currentMetteButton" >METTE 24/25</button>
+            <button class="currentMetteButton" >METTE 25/26</button>
             <button class="contactButton" >KONTAKT</button>
         </div>
 
@@ -42,7 +42,7 @@
         </div>
     </article>
 
-    <p id='whoAreWe' class="who-are-we">VILKA ÄR VI I METTE 24/25?</p> 
+    <p id='whoAreWe' class="who-are-we">VILKA ÄR VI I METTE 25/26?</p> 
     <p id='pleaseContactUs' class="please-contact-us">KONTAKTA OSS!</p>
 
     <!-- Scroll down arrow-->
@@ -77,18 +77,16 @@
         </div>
 
         <div id ="metteNOW-content">
-            <!-- Här kommer 8 bilder att visas när "Mette 24/25" klickas -->
+            <!-- Här kommer 8 bilder att visas när "Mette 25/26" klickas -->
             <div id="metteNOW-content1">
-                <img src="images/metteNOW-content/Ordforande.png" alt="Ordförande Agnes Groth">
-                <img src="images/metteNOW-content/Kassor.png" alt="Kassör Ella Bergström">
-                <img src="images/metteNOW-content/Webbansvarig.png" alt="Webbansvarig Adna Mari&#263">
-                <img src="images/metteNOW-content/Eventansvarig.png" alt="Eventansvarig Clara Bergström">
+                <img src="images/metteNOW-content/Ordforande.png" alt="Ordförande Annie Söderman">
+                <img src="images/metteNOW-content/Kassor.png" alt="Kassör Angelika Grišmanova">
+                <img src="images/metteNOW-content/Sekreterare&Webb.png" alt="Sekreterare&Webb Emma Davidsson">
             </div>
             <div id="metteNOW-content2">
-                <img src="images/metteNOW-content/Tryck&PR.png" alt="Tryck&PR Astrid Helzén">
-                <img src="images/metteNOW-content/Sekreterare.png" alt="Sekreterare Rebecca Arkhed">
-                <img src="images/metteNOW-content/Spons&Kommunikation.png" alt="Spons&Kommunikation Andrea Åstrand">
-                <img src="images/metteNOW-content/Maskot.png" alt="Metadora">
+                <img src="images/metteNOW-content/Tryck&PR.png" alt="Tryck&PR-Spons&Kommunikation Linn Löfgren">
+                <img src="images/metteNOW-content/Event.png" alt="Eventansvarig-Spons&Kommunikation Emelie Amanda Gil Solar">
+                <img src="images/metteNOW-content/Maskot.png" alt="Metallica">
             </div>
             
 
@@ -99,6 +97,9 @@
             <p class = "marit-text">Efter en mycket händelserik resa av hårt arbete och skoj tillsammans som Mette
                 så slutar inte vår resa här! Vi kommer istället att minnas som Marit.</p>
                 <div class ="marit-content">
+                    <button class="marit2425Button" onclick="showMaritImage('marit2425Button', 'marit-image2425')">METTE 24/25</button>
+                    <img id="marit-image2425" src="images/MARIT/Mette24_25.JPG" alt="Marit 24/25 saknar bild.">
+
                     <button class="marit2324Button" onclick="showMaritImage('marit2324Button', 'marit-image2324')">METTE 23/24</button>
                     <img id="marit-image2324" src="images/mette23-24.JPG" alt="Marit 23/24 saknar bild.">
 
@@ -143,28 +144,28 @@
             <!-- Ordförande -->
             <div class="ordforande-info person-info">
                 <h2>Ordförande</h2>
-                <p>Har du generella frågor om vad som helst som angår föreningen? Då kan du kontakta vår ordförande Agnes Groth på:</p>
+                <p>Har du generella frågor om vad som helst som angår föreningen? Då kan du kontakta vår ordförande Annie Söderman på:</p>
                 <p id="mail" class="fa fa-paper-plane-o"> Mettestyrelsen@medieteknik.nu</p>
             </div>
         
             <!-- Kassör -->
             <div class="kassor-info person-info">
                 <h2>Kassör</h2>
-                <p>Undrar du över något som angår Mettes ekonomi? Då kan du kontakta vår kassör Ella Bergström på:</p>
+                <p>Undrar du över något som angår Mettes ekonomi? Då kan du kontakta vår kassör Angelika Grismanova på:</p>
                 <p id="mail" class="fa fa-paper-plane-o"> Mettekassor@medieteknik.nu</p>
             </div>
         
             <!-- Webbansvarig -->
             <div class="webbansvarig-info person-info">
                 <h2>Webbansvarig</h2>
-                <p>Hittar du något konstigt eller har du frågor om hemsidans innehåll? Då kan du kontakta Adna Maric på:</p>
+                <p>Hittar du något konstigt eller har du frågor om hemsidans innehåll? Då kan du kontakta Emma Davidsson på:</p>
                 <p id="mail" class="fa fa-paper-plane-o"> Mettewebb@medieteknik.nu</p>
             </div>
         
             <!-- Eventansvarig -->
             <div class="eventansvarig-info person-info">
                 <h2>Eventansvarig</h2>
-                <p>Har du frågor angående våra kommande event och aktiviteter? Då kan du kontakta Clara Bergström på:</p>
+                <p>Har du frågor angående våra kommande event och aktiviteter? Då kan du kontakta Emelie Amanda Gil Solar på:</p>
                 <p id="mail" class="fa fa-paper-plane-o"> Metteevent@medieteknik.nu</p>
             </div>
         </div>
@@ -173,21 +174,21 @@
             <!-- Tryck & PR -->
                 <div class="tryck-och-pr-info person-info">
                     <h2>Tryck & PR</h2>
-                    <p>Frågor angående Mettes allmänna marknadsföring? Då kan du kontakta Astrid Helzén på:</p>
+                    <p>Frågor angående Mettes allmänna marknadsföring? Då kan du kontakta Linn Löfgren på:</p>
                     <p id="mail" class="fa fa-paper-plane-o"> Mettepr@medieteknik.nu</p>
                 </div>
             
                 <!-- Sekreterare -->
                 <div class="sekreterare-info person-info">
                     <h2>Sekreterare</h2>
-                    <p>Har du frågor angående Mettes dokument och årliga möten? Då kan du kontakta Rebecca Arkhed på:</p>
+                    <p>Har du frågor angående Mettes dokument och årliga möten? Då kan du kontakta Emma Davidsson på:</p>
                     <p id="mail" class="fa fa-paper-plane-o"> Sekreterare.mette@medieteknik.nu</p>
                 </div>
             
                 <!-- Spons & Kommunikation -->
                 <div class="spons-och-kommunikation-info person-info">
                     <h2>Spons & Kommunikation</h2>
-                    <p>Vill ditt företag diskutera om samarbeten eller sponsra Mette? Då kan du kontakta Andrea Åstrand på:</p>
+                    <p>Vill ditt företag diskutera om samarbeten eller sponsra Mette? Då kan du kontakta Linn Löfgren och Emelie Amanda Gil Solar på:</p>
                     <p id="mail"class="fa fa-paper-plane-o"> Samarbete.mette@medieteknik.nu</p>
                 </div>
             </div>
@@ -232,7 +233,7 @@
             </div>
             <div class="column">
                 <h2>Om oss</h2>
-                <p id="metteLink">Mette 24/25</p>
+                <p id="metteLink">Mette 25/26</p>
                 <p id="contactLink">Kontakt</p>
                 <a id="documentLink" href="https://drive.google.com/drive/folders/1uCbm1uXPXbt2kxht3JCZpdl1tCgDiyR9?usp=drive_link" target="_blank">Dokument</a>
             </div>
@@ -311,7 +312,7 @@
             <div class="background-rosaVeckan-image"></div>
             <div class="white-box">
                 <button class="backButton" role="button" onclick="closeRosaVeckanContent()"><span class="text">Tillbaka</span></button>
-                <h2 id="rosaVeckan2023" style="color:palevioletred;">ROSA VECKAN 2023</h2>
+                <h2 id="rosaVeckan2023" style="color:palevioletred;">ROSA VECKAN 2025</h2>
                 <div class="slideshow-container">
                     <!-- Bilder från ovveinvigning -->
                     <div class="rosaVeckanSlides fade">

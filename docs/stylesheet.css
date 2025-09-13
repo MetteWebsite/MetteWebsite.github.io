@@ -736,6 +736,7 @@ button[label="STYRELSEN"]::before {
     transition: opacity 0.1s ease;
 }
 
+.marit2425Button,
 .marit2324Button,
 .marit2223Button,
 .marit2122Button,
@@ -787,6 +788,7 @@ button[label="STYRELSEN"]::before {
     display: none;
 }
 
+#marit-image2425,
 #marit-image2324,
 #marit-image2223,
 #marit-image2122,
@@ -846,6 +848,7 @@ button[label="STYRELSEN"]::before {
         font-size: 10vw;
     }
 
+    .marit2425Button,
     .marit2324Button,
     .marit2223Button,
     .marit2122Button,
@@ -876,6 +879,7 @@ button[label="STYRELSEN"]::before {
         gap: 3vw;
     }
 
+    #marit-image2425,
     #marit-image2324,
     #marit-image2223,
     #marit-image2122,
@@ -934,6 +938,7 @@ button[label="STYRELSEN"]::before {
         font-size: 12vw;
     }
 
+    .marit2425Button,
     .marit2324Button,
     .marit2223Button,
     .marit2122Button,
@@ -964,6 +969,7 @@ button[label="STYRELSEN"]::before {
         gap: 4vw;
     }
 
+    #marit-image2425,
     #marit-image2324,
     #marit-image2223,
     #marit-image2122,
