@@ -1,3 +1,14 @@
+// -------------------- Mobilmeny --------------------
+
+const menuToggle = document.querySelector(".menu-toggle");
+const mobileMenu = document.querySelector(".mobile-menu");
+
+if (menuToggle && mobileMenu) {
+    menuToggle.addEventListener("click", () => {
+        mobileMenu.classList.toggle("active");
+    });
+}
+
 // Ändrar headern till svart vid scroll
 window.addEventListener('scroll', function() {
   var header = document.getElementById('header');
@@ -41,85 +52,58 @@ function clearPageExcept(divIdToKeep) {
 }
 
 //--------------------- Hem-knapps funktion -----------------------------
-var homeButton = document.querySelector('.homeButton');
+var homeButtons = document.querySelectorAll('.homeButton');
 
-homeButton.addEventListener('click', function() {
-  scrollToTop(); // Scrolla till toppen
+homeButtons.forEach(function(button) {
+  button.addEventListener('click', function() {
+    scrollToTop(); // Scrolla till toppen
+    
+    // Återställ klasserna på body så att den vanliga Hem-vyn visas igen
+    document.body.className = ""; 
+    document.body.style.setProperty('--bg-opacity', 0.3); // Återställ till skarp bild i toppen
 
-  // Ladda om sidan efter en kort fördröjning för att säkerställa att scrollen är klar
-  setTimeout(function() {
-    window.location.reload();
-  }, 500); // 500ms fördröjning, justera vid behov
+    // Ladda om sidan efter en kort fördröjning för att rensa alla öppnade bilder/formulär
+    setTimeout(function() {
+      window.location.reload();
+    }, 500); 
+  });
 });
 
-//---------------------------Mette 24/25 funktion---------------------------------
+//---------------------------Mette 26/27 funktion---------------------------------
 
 // Variabel för att hålla reda på om currentMetteButton har klickats på eller inte
 var metteButtonClicked = false;
 
-// Variabel för olika contents som ska/inte ska visas vid klick
-var currentMetteButton = document.querySelector('.currentMetteButton');
-var learnMoreButton = document.getElementById('learnMoreButton');
-var metteNowContent = document.getElementById('metteNOW-content');
-var otherContent = document.querySelectorAll('.content-section > *:not(#metteNOW-content)');
-var bottomContent = document.querySelector('.bottom-section');
-var whoAreWeText = document.getElementById('whoAreWe');
-var maritContent = document.getElementById('marit-content');
-var pleaseContactUs = document.querySelector('.please-contact-us');
-var contactUsInfo = document.querySelector('.contact-us-information');
-
-// Funktion för att visa eller dölja whoAreWeText
-function toggleWhoAreWeText() {
-  whoAreWeText.style.display = metteButtonClicked ? 'block' : 'none';
-}
-
-// Funktion för att visa eller dölja pleaseContactUs
-function togglePleaseContactUs() {
-  pleaseContactUs.style.display = contactButtonClicked ? 'block' : 'none';
-}
-
 // Funktion för att hantera Mette-knappklick
 function handleMetteButtonClick() {
-  scrollToTop(); // Scrolla till toppen
-  metteButtonClicked = true; // Sätt Mette-knappen som klickad
-  contactButtonClicked = false; // Återställ kontaktknappens status
-  toggleWhoAreWeText(); // Visa eller dölj Who Are We text
-  togglePleaseContactUs(); // Visa eller dölj Please Contact Us text
+  scrollToTop(); // Scrolla mjukt upp till toppen så gruppbilden och pilarna syns först
+  metteButtonClicked = true; 
+  if (typeof contactButtonClicked !== 'undefined') contactButtonClicked = false;
 
-  document.querySelector('body').style.setProperty('--bg-opacity', 0.7);
+  // 1. Aktivera Mette-vyn stenhårt i CSS via body-klassen
+  document.body.classList.remove('view-contact');
+  document.body.classList.add('view-mette');
 
-  // Visa Mette NOW-innehåll och maritContent
-  metteNowContent.style.display = 'block';
-  maritContent.style.display = 'block';
-
-  // Visa bottom-content
-  bottomContent.style.visibility = 'visible';
-
-  // Göm allt annat innehåll i content-sektionen förutom metteNOW-content och maritContent
-  otherContent.forEach(function(element) {
-    if (element !== bottomContent && element !== metteNowContent && element !== maritContent) {
-      element.style.display = 'none';
-    }
-  });
-
-  // Göm kontaktinnehåll
-  pleaseContactUs.style.display = 'none';
-  contactUsInfo.style.display = 'none';
-
-  // Ändra opaciteten
-  metteNowContent.classList.add('opaque-content');
-  maritContent.classList.add('opaque-content');
+  // 2. Håll gruppbilden på 0.3 i opacitet (skarp) i toppen så den tonas bort först när man skrollar ner
+  document.body.style.setProperty('--bg-opacity', 0.3);
 }
 
-currentMetteButton.addEventListener('click', handleMetteButtonClick);
-learnMoreButton.addEventListener('click', handleMetteButtonClick);
+// FIX: Variabeln och loopen använder nu exakt samma namn (currentMetteButtons)
+var currentMetteButtons = document.querySelectorAll('.currentMetteButton');
+currentMetteButtons.forEach(function(button) {
+  button.addEventListener('click', handleMetteButtonClick);
+});
+
+// Säkra learnMoreButton innan event lyssnas på
+var learnMoreButton = document.getElementById('learnMoreButton');
+if (learnMoreButton) {
+  learnMoreButton.addEventListener('click', handleMetteButtonClick);
+}
 
 // Marit-buttons funktion, visa bild vid klick
 function showMaritImage(buttonId, imageId) {
-  // Hämta knappen som klickades på
-  var button = document.getElementById(buttonId);
-  // Hämta bilden som motsvarar knappen
   var image = document.getElementById(imageId);
+  if (!image) return; // Säkerhetsspärr om bilden saknas
 
   // Kontrollera om bilden är synlig eller gömd
   var isImageVisible = image.style.display === 'block';
@@ -138,115 +122,120 @@ function showMaritImage(buttonId, imageId) {
 
 //---------------------------Kontakt funktion---------------------------------
 
-var contactButton = document.querySelector('.contactButton');
+// Global variabel för att hålla reda på kontaktknappens status
+var contactButtonClicked = false;
 
-contactButton.addEventListener('click', function() {
-  scrollToTop(); // Scrolla till toppen
-  contactButtonClicked = true; // Sätt kontaktknappen som klickad
-  metteButtonClicked = false; // Återställ Mette-knappens status
-  toggleWhoAreWeText(); // Visa eller dölj Who Are We text
-  togglePleaseContactUs(); // Visa eller dölj Please Contact Us text
+// Funktion för att hantera klick på kontaktknapparna
+function handleContactButtonClick() {
+  scrollToTop(); // Skrolla mjukt upp till toppen så att rubriken visas först
+  contactButtonClicked = true;
+  if (typeof metteButtonClicked !== 'undefined') metteButtonClicked = false;
 
-  document.querySelector('body').style.setProperty('--bg-opacity', 0.7);
+  // 1. Slå på kontakt-vyn i CSS via body-klassen och stäng av mette-vyn
+  document.body.classList.remove('view-mette');
+  document.body.classList.add('view-contact');
 
-  // Visa kontaktinformationen
-  contactUsInfo.style.display = 'block';
-  pleaseContactUs.style.display = 'block';
+  // 2. Tona bort bakgrundsbilden till 0.7 i botten för bättre kontrast bakom kontaktkorten
+  document.body.style.setProperty('--bg-opacity', 0.7);
+  
+  // Stäng mobilmenyn automatiskt efter klick (om den var öppen)
+  if (typeof mobileMenu !== 'undefined' && mobileMenu) {
+    mobileMenu.classList.remove("active");
+  }
+}
 
-  // Visa bottom-content
-  bottomContent.style.visibility = 'visible';
-
-  // Göm allt annat innehåll i content-sektionen förutom kontaktinformationen
-  otherContent.forEach(function(element) {
-    if (element !== bottomContent && element !== contactUsInfo && element !== pleaseContactUs) {
-      element.style.display = 'none';
-    }
-  });
-
-  // Göm Mette-relaterat innehåll
-  metteNowContent.style.display = 'none';
-  maritContent.style.display = 'none';
-
-  // Ändra opaciteten för specifika innehållselement
-  pleaseContactUs.classList.add('opaque-content');
-  contactUsInfo.classList.add('opaque-content');
-});
-
-// När sidan laddas in
-document.addEventListener('DOMContentLoaded', function() {
-  // Göm metteNOW-content, marit-content och bottom-content vid start
-  metteNowContent.style.display = 'none';
-  whoAreWeText.style.display = 'none';
-  maritContent.style.display = 'none';
-
-  // Göm kontaktinnehåll vid start
-  contactUsInfo.style.display = 'none';
-  pleaseContactUs.style.display = 'none';
+// Koppla funktionen till ALLA kontaktknappar (både dator och mobil)
+var contactButtons = document.querySelectorAll('.contactButton');
+contactButtons.forEach(function(button) {
+  button.addEventListener('click', handleContactButtonClick);
 });
 
 //-------------------------- Tjejfika funktion --------------------------------
 document.addEventListener('DOMContentLoaded', function() {
   var tjejfikaContent = document.getElementById('tjejfikaContent');
-  var prevButton = document.querySelector('.prev');
-  var nextButton = document.querySelector('.next');
   var slideIndex = 1;
 
-  // Funktion för att hantera före och nästa slide
+  // SÄKRAD PIL-HÄMTNING: Hämta pilarna lokalt inuti Tjejfika-boxen
+  var prevButton = tjejfikaContent ? tjejfikaContent.querySelector('.prev') : null;
+  var nextButton = tjejfikaContent ? tjejfikaContent.querySelector('.next') : null;
+
   function plusSlides(n) {
       showSlides(slideIndex += n);
   }
 
-  // Funktion för att visa specifik slide
   function currentSlide(n) {
       showSlides(slideIndex = n);
   }
 
-  // Funktion att visa slides baserat på index
   function showSlides(n) {
       var i;
-      var slides = document.getElementsByClassName("mySlides");
+      if (!tjejfikaContent) return;
+      
+      var slideshow = tjejfikaContent.querySelector(".slideshow-container");
+      if (!slideshow) return; 
+      
+      var slides = slideshow.getElementsByClassName("mySlides");
+      if (slides.length === 0) return;
+      
       if (n > slides.length) { slideIndex = 1; }
       if (n < 1) { slideIndex = slides.length; }
+      
       for (i = 0; i < slides.length; i++) {
           slides[i].style.display = "none";
       }
-      slides[slideIndex - 1].style.display = "block";
+      
+      if (slides[slideIndex - 1]) {
+          slides[slideIndex - 1].style.display = "block";
+      }
   }
 
-  // Lyssna på klickhändelsen för tjejfika-knappen
   var tjejfikaButton = document.querySelector('.tjejfikaButton');
-  tjejfikaButton.addEventListener('click', function() {
-      scrollToTop(); // Scrolla till toppen
-      openTjejfikaContent(); // Öppna tjejfika-innehållet
-  });
+  if (tjejfikaButton) {
+      tjejfikaButton.addEventListener('click', function() {
+          if (typeof scrollToTop === "function") scrollToTop();
+          openTjejfikaContent(); 
+      });
+  }
 
   // Funktion för att öppna tjejfika-innehållet
   function openTjejfikaContent() {
-      tjejfikaContent.style.display = 'block'; // Visa tjejfika-innehållet
-      document.body.style.overflow = 'hidden'; // Dölj scrollbalken på kroppen
-      showSlides(slideIndex); // Visa första slide
+      if (!tjejfikaContent) return;
+      
+      tjejfikaContent.style.display = 'block'; 
+      tjejfikaContent.classList.remove('hidden'); 
+      
+      // FIX: Tvingar fram tillbaka-knappen i JavaScript så att den övervinner döljningen från startsidan!
+      var btn = tjejfikaContent.querySelector('.backButton');
+      if (btn) {
+          btn.style.setProperty('display', 'inline-block');
+      }
+      
+      document.body.style.overflow = 'hidden'; 
+      showSlides(slideIndex); 
   }
 
-  // Lyssna på klickhändelsen för bakåtknappen
-  var backButton = document.querySelector('.backButton');
-  backButton.addEventListener('click', function() {
-      closeFikaContent(); // Stäng tjejfika-innehållet när användaren klickar på bakåtknappen
-  });
-
-  // Funktion för att stänga tjejfika-innehållet
-  function closeFikaContent() {
-      tjejfikaContent.style.display = 'none'; // Göm tjejfika-innehållet
-      document.body.style.overflow = ''; // Återställ scrollbeteendet
+  // Lyssna på klickhändelsen för bakåtknappen - Specifikt för Tjejfika
+  if (tjejfikaContent) {
+      var backButton = tjejfikaContent.querySelector('.backButton');
+      if (backButton) {
+          backButton.addEventListener('click', function() {
+              closeTjejfikaContent();
+          });
+      }
   }
 
-  // Lyssna på klickhändelser för prev och next buttons
-  prevButton.addEventListener('click', function() {
-      plusSlides(-1); // Flytta till föregående slide
-  });
+  window.closeTjejfikaContent = function() {
+      if (tjejfikaContent) {
+          tjejfikaContent.style.display = 'none'; 
+          tjejfikaContent.classList.add('hidden');
+          document.body.style.overflow = ''; 
+      }
+  }
 
-  nextButton.addEventListener('click', function() {
-      plusSlides(1); // Flytta till nästa slide
-  });
+  if (prevButton && nextButton) {
+      prevButton.addEventListener('click', function() { plusSlides(-1); });
+      nextButton.addEventListener('click', function() { plusSlides(1); });
+  }
 });
 
 //-------------------------- Ovveinvigning funktion --------------------------------
@@ -362,60 +351,60 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 //-------------------------- Gaia Event funktion --------------------------------
-document.addEventListener('DOMContentLoaded', function() {
-  var gaiaContent = document.getElementById('gaiaContent');
-  var prevButton = gaiaContent.querySelector('.prev');
-  var nextButton = gaiaContent.querySelector('.next');
-  var slideIndex = 1;
+// document.addEventListener('DOMContentLoaded', function() {
+//   var gaiaContent = document.getElementById('gaiaContent');
+//   //var prevButton = gaiaContent.querySelector('.prev');
+//   var nextButton = gaiaContent.querySelector('.next');
+//   var slideIndex = 1;
 
-  function plusSlides(n) {
-    showSlides(slideIndex += n);
-  }
+//   function plusSlides(n) {
+//     showSlides(slideIndex += n);
+//   }
 
-  function currentSlide(n) {
-    showSlides(slideIndex = n);
-  }
+//   function currentSlide(n) {
+//     showSlides(slideIndex = n);
+//   }
 
-  function showSlides(n) {
-    var slides = gaiaContent.getElementsByClassName("gaiaSlides");
-    if (n > slides.length) { slideIndex = 1; }
-    if (n < 1) { slideIndex = slides.length; }
-    for (var i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-    }
-    slides[slideIndex - 1].style.display = "block";
-  }
+//   function showSlides(n) {
+//     var slides = gaiaContent.getElementsByClassName("gaiaSlides");
+//     if (n > slides.length) { slideIndex = 1; }
+//     if (n < 1) { slideIndex = slides.length; }
+//     for (var i = 0; i < slides.length; i++) {
+//       slides[i].style.display = "none";
+//     }
+//     slides[slideIndex - 1].style.display = "block";
+//   }
 
-  var enkvallButton = document.querySelector('.enkvallButton');
-  enkvallButton.addEventListener('click', function() {
-    scrollToTop();
-    openGaiaContent();
-  });
+//   var enkvallButton = document.querySelector('.enkvallButton');
+//   enkvallButton.addEventListener('click', function() {
+//     scrollToTop();
+//     openGaiaContent();
+//   });
 
-  function openGaiaContent() {
-    gaiaContent.style.display = 'block';
-    document.body.style.overflow = 'hidden';
-    showSlides(slideIndex);
-  }
+//   function openGaiaContent() {
+//     gaiaContent.style.display = 'block';
+//     document.body.style.overflow = 'hidden';
+//     showSlides(slideIndex);
+//   }
 
-  var backButton = gaiaContent.querySelector('.backButton');
-  backButton.addEventListener('click', function() {
-    closeGaiaContent();
-  });
+//   var backButton = gaiaContent.querySelector('.backButton');
+//   backButton.addEventListener('click', function() {
+//     closeGaiaContent();
+//   });
 
-  function closeGaiaContent() {
-    gaiaContent.style.display = 'none';
-    document.body.style.overflow = '';
-  }
+//   function closeGaiaContent() {
+//     gaiaContent.style.display = 'none';
+//     document.body.style.overflow = '';
+//   }
 
-  prevButton.addEventListener('click', function() {
-    plusSlides(-1);
-  });
+//   prevButton.addEventListener('click', function() {
+//     plusSlides(-1);
+//   });
 
-  nextButton.addEventListener('click', function() {
-    plusSlides(1);
-  });
-});
+//   nextButton.addEventListener('click', function() {
+//     plusSlides(1);
+//   });
+// });
 
 //-------------------------- Damsittningen funktion --------------------------------
 document.addEventListener('DOMContentLoaded', function() {
@@ -611,23 +600,33 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 
-//-------------------------- Koppling av Mette 24/25 och Kontakt textlänkar --------------------------------
+//-------------------------- Koppling av Mette 26/27 och Kontakt textlänkar --------------------------------
 
-// Variabel för att hålla reda på om contactButton har klickats på eller inte
-var contactButtonClicked = false;
+//-------------------------- FOOTER-LÄNKAR --------------------------------
 
-// Hämta Mette 24/25 länken och koppla den till currentMetteButton funktionaliteten
-var metteLink = document.getElementById('metteLink');
-metteLink.addEventListener('click', function() {
-  currentMetteButton.click(); // Simulerar ett klick på currentMetteButton
+document.addEventListener('DOMContentLoaded', function () {
+
+    const metteLink = document.getElementById('metteLink');
+    const contactLink = document.getElementById('contactLink');
+
+    const currentMetteButtons = document.querySelectorAll('.currentMetteButton');
+    const contactButtons = document.querySelectorAll('.contactButton');
+
+    // "Om oss" / Mette 26/27
+    if (metteLink) {
+        metteLink.addEventListener('click', function () {
+            currentMetteButtons[0].click();
+        });
+    }
+
+    // "Kontakta"
+    if (contactLink) {
+        contactLink.addEventListener('click', function () {
+            contactButtons[0].click();
+        });
+    }
+
 });
-
-// Hämta Kontakt länken och koppla den till contactButton funktionaliteten
-var contactLink = document.getElementById('contactLink');
-contactLink.addEventListener('click', function() {
-  contactButton.click(); // Simulerar ett klick på contactButton
-});
-
 
 document.addEventListener('DOMContentLoaded', function () {
   const contentDiv = document.getElementById('metteNOW-content');
